@@ -1,0 +1,1859 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_9.o
+init CODE 0 66 66 4 1 2
+reset_vec CODE 0 0 0 6 1 2
+config CONFIG 4 300000 300000 C 1 1
+$dist/test/debug\Rocko_v0.X.debug.o
+cinit CODE 0 2372 2372 66 1 2
+text0 CODE 0 2534 2534 4A 1 2
+text1 CODE 0 23D8 23D8 5C 1 2
+text2 CODE 0 1932 1932 10C 1 2
+text3 CODE 0 2838 2838 12 1 2
+text4 CODE 0 2110 2110 8E 1 2
+text5 CODE 0 CF4 CF4 41C 1 2
+text6 CODE 0 1706 1706 116 1 2
+text7 CODE 0 257E 257E 46 1 2
+text8 CODE 0 181C 181C 116 1 2
+text9 CODE 0 157E 157E 188 1 2
+nvCOMRAM COMRAM 1 57 57 8 1 1
+text10 CODE 0 13CA 13CA 1B4 1 2
+text11 CODE 0 1A3E 1A3E 106 1 2
+text12 CODE 0 1B44 1B44 104 1 2
+text13 CODE 0 83E 83E 4B6 1 2
+text14 CODE 0 2644 2644 34 1 2
+text15 CODE 0 2678 2678 2E 1 2
+text16 CODE 0 284A 284A 12 1 2
+text17 CODE 0 26D4 26D4 2C 1 2
+text18 CODE 0 1C48 1C48 F6 1 2
+text19 CODE 0 2608 2608 3C 1 2
+text20 CODE 0 219E 219E 7E 1 2
+text21 CODE 0 1D3E 1D3E EC 1 2
+text22 CODE 0 1110 1110 2BA 1 2
+text23 CODE 0 2434 2434 5C 1 2
+text24 CODE 0 1E2A 1E2A C2 1 2
+text25 CODE 0 27A0 27A0 20 1 2
+text26 CODE 0 26A6 26A6 2E 1 2
+text27 CODE 0 25C4 25C4 44 1 2
+text28 CODE 0 2700 2700 2C 1 2
+text29 CODE 0 1EEC 1EEC C2 1 2
+text30 CODE 0 2294 2294 74 1 2
+text31 CODE 0 2308 2308 6A 1 2
+text32 CODE 0 206C 206C A4 1 2
+text33 CODE 0 272C 272C 2A 1 2
+text34 CODE 0 277C 277C 24 1 2
+text35 CODE 0 2880 2880 A 1 2
+text36 CODE 0 27C0 27C0 20 1 2
+text37 CODE 0 288A 288A A 1 2
+text38 CODE 0 27E0 27E0 20 1 2
+text39 CODE 0 2894 2894 A 1 2
+text40 CODE 0 2756 2756 26 1 2
+text41 CODE 0 289E 289E A 1 2
+text42 CODE 0 2800 2800 20 1 2
+text43 CODE 0 28A8 28A8 A 1 2
+text44 CODE 0 285C 285C 12 1 2
+text45 CODE 0 1FAE 1FAE BE 1 2
+text46 CODE 0 24E8 24E8 4C 1 2
+text47 CODE 0 28B2 28B2 A 1 2
+text48 CODE 0 28BC 28BC A 1 2
+text49 CODE 0 28C6 28C6 A 1 2
+text50 CODE 0 28D0 28D0 A 1 2
+text51 CODE 0 286E 286E 12 1 2
+text52 CODE 0 2490 2490 58 1 2
+text54 CODE 0 28DA 28DA 6 1 2
+text55 CODE 0 28E0 28E0 6 1 2
+nvBANK0 BANK0 1 E6 E6 A 1 1
+idataCOMRAM CODE 0 2820 2820 17 1 1
+cstackCOMRAM COMRAM 1 23 23 1D 1 1
+temp COMRAM 1 5F 5F 1 1 1
+bssBANK0 BANK0 1 D8 D8 E 1 1
+intcode CODE 0 8 8 5E 1 2
+smallconst SMALLCONST 0 800 800 3E 1 2
+idataBANK0 CODE 0 221C 221C 78 1 1
+dataBANK0 BANK0 1 60 60 78 1 1
+dataCOMRAM COMRAM 1 40 40 17 1 1
+bssCOMRAM COMRAM 1 1 1 22 1 1
+config CONFIG 4 300000 300000 C 1 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM F0-7FF 1
+SFR DEF-FFF 1
+BANK0 F0-FF 1
+BANK1 100-1FF 1
+BANK2 200-2FF 1
+BANK3 300-3FF 1
+BANK4 400-4FF 1
+BANK5 500-5FF 1
+BANK6 600-6FF 1
+BANK7 700-7FF 1
+CONST 6-7 1
+CONST 6A-7FF 1
+CONST 2837-2837 1
+CONST 28E6-7FFF 1
+IDLOC 200000-20000F 1
+SMALLCONST 2837-2837 1
+SMALLCONST 28E6-7FFF 1
+CODE 6-7 1
+CODE 6A-7FF 1
+CODE 2837-2837 1
+CODE 28E6-7FFF 1
+BIGRAM F0-7FF 1
+BIGSFR DEF-FFF 1
+EEDATA 310000-3103FF 1
+MEDIUMCONST 2837-2837 1
+MEDIUMCONST 28E6-7FFF 1
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/test/debug\Rocko_v0.X.debug.o
+8 intcode CODE >34822:C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_1.s
+8 intcode CODE >89:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/interrupt.c
+A intcode CODE >92:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/interrupt.c
+18 intcode CODE >94:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/interrupt.c
+36 intcode CODE >96:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/interrupt.c
+3A intcode CODE >97:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/interrupt.c
+3E intcode CODE >98:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/interrupt.c
+5A intcode CODE >100:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/interrupt.c
+5E intcode CODE >101:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/interrupt.c
+62 intcode CODE >105:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/interrupt.c
+62 intcode CODE >111:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/interrupt.c
+28E0 text55 CODE >386:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/adc/src/adc.c
+28E0 text55 CODE >388:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/adc/src/adc.c
+28E4 text55 CODE >397:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/adc/src/adc.c
+28DA text54 CODE >399:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/adc/src/adc.c
+28DA text54 CODE >401:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/adc/src/adc.c
+28DE text54 CODE >410:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/adc/src/adc.c
+2490 text52 CODE >43:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/adc/src/adc.c
+2490 text52 CODE >45:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/adc/src/adc.c
+2492 text52 CODE >46:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/adc/src/adc.c
+2496 text52 CODE >47:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/adc/src/adc.c
+2498 text52 CODE >49:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/adc/src/adc.c
+249A text52 CODE >50:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/adc/src/adc.c
+249C text52 CODE >52:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/adc/src/adc.c
+24A4 text52 CODE >53:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/adc/src/adc.c
+24AC text52 CODE >54:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/adc/src/adc.c
+24AE text52 CODE >56:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/adc/src/adc.c
+24B0 text52 CODE >57:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/adc/src/adc.c
+24B2 text52 CODE >58:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/adc/src/adc.c
+24B4 text52 CODE >59:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/adc/src/adc.c
+24B6 text52 CODE >60:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/adc/src/adc.c
+24B8 text52 CODE >61:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/adc/src/adc.c
+24BA text52 CODE >62:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/adc/src/adc.c
+24BC text52 CODE >63:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/adc/src/adc.c
+24C2 text52 CODE >64:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/adc/src/adc.c
+24C4 text52 CODE >65:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/adc/src/adc.c
+24C6 text52 CODE >66:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/adc/src/adc.c
+24C8 text52 CODE >67:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/adc/src/adc.c
+24CA text52 CODE >71:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/adc/src/adc.c
+24CE text52 CODE >75:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/adc/src/adc.c
+24D2 text52 CODE >78:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/adc/src/adc.c
+24D4 text52 CODE >79:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/adc/src/adc.c
+24D6 text52 CODE >81:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/adc/src/adc.c
+24DA text52 CODE >82:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/adc/src/adc.c
+24DC text52 CODE >84:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/adc/src/adc.c
+24E0 text52 CODE >85:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/adc/src/adc.c
+24E2 text52 CODE >87:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/adc/src/adc.c
+24E6 text52 CODE >92:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/adc/src/adc.c
+286E text51 CODE >39:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/clock.c
+286E text51 CODE >42:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/clock.c
+2874 text51 CODE >44:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/clock.c
+2876 text51 CODE >46:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/clock.c
+2878 text51 CODE >52:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/clock.c
+287C text51 CODE >53:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/clock.c
+287E text51 CODE >55:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/clock.c
+28D0 text50 CODE >131:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/interrupt.c
+28D0 text50 CODE >132:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/interrupt.c
+28D8 text50 CODE >133:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/interrupt.c
+28C6 text49 CODE >157:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/interrupt.c
+28C6 text49 CODE >158:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/interrupt.c
+28CE text49 CODE >159:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/interrupt.c
+28BC text48 CODE >183:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/interrupt.c
+28BC text48 CODE >184:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/interrupt.c
+28C4 text48 CODE >185:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/interrupt.c
+28B2 text47 CODE >209:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/interrupt.c
+28B2 text47 CODE >210:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/interrupt.c
+28BA text47 CODE >211:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/interrupt.c
+24E8 text46 CODE >43:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/interrupt.c
+24E8 text46 CODE >46:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/interrupt.c
+24EA text46 CODE >50:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/interrupt.c
+24EE text46 CODE >51:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/interrupt.c
+24F0 text46 CODE >53:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/interrupt.c
+24FC text46 CODE >58:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/interrupt.c
+2500 text46 CODE >59:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/interrupt.c
+2502 text46 CODE >61:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/interrupt.c
+250E text46 CODE >66:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/interrupt.c
+2512 text46 CODE >67:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/interrupt.c
+2514 text46 CODE >69:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/interrupt.c
+2520 text46 CODE >74:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/interrupt.c
+2524 text46 CODE >75:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/interrupt.c
+2526 text46 CODE >77:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/interrupt.c
+2532 text46 CODE >80:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/interrupt.c
+1FAE text45 CODE >38:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+1FAE text45 CODE >43:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+1FB0 text45 CODE >44:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+1FB2 text45 CODE >45:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+1FB4 text45 CODE >46:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+1FB6 text45 CODE >47:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+1FB8 text45 CODE >48:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+1FBA text45 CODE >49:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+1FBC text45 CODE >50:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+1FBE text45 CODE >54:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+1FC2 text45 CODE >55:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+1FC4 text45 CODE >56:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+1FC6 text45 CODE >57:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+1FC8 text45 CODE >58:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+1FCA text45 CODE >59:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+1FCC text45 CODE >60:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+1FCE text45 CODE >61:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+1FD0 text45 CODE >66:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+1FD4 text45 CODE >67:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+1FD8 text45 CODE >68:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+1FDC text45 CODE >69:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+1FE0 text45 CODE >70:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+1FE4 text45 CODE >71:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+1FE8 text45 CODE >72:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+1FEC text45 CODE >73:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+1FF0 text45 CODE >78:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+1FF4 text45 CODE >79:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+1FF8 text45 CODE >80:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+1FFC text45 CODE >81:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+2000 text45 CODE >82:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+2004 text45 CODE >83:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+2008 text45 CODE >88:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+200A text45 CODE >89:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+200C text45 CODE >90:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+200E text45 CODE >91:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+2010 text45 CODE >92:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+2012 text45 CODE >93:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+2014 text45 CODE >94:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+2016 text45 CODE >95:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+2018 text45 CODE >101:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+201A text45 CODE >102:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+201C text45 CODE >103:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+201E text45 CODE >104:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+2020 text45 CODE >105:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+2022 text45 CODE >106:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+2024 text45 CODE >107:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+2028 text45 CODE >108:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+202C text45 CODE >113:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+202E text45 CODE >114:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+2030 text45 CODE >115:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+2032 text45 CODE >116:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+2034 text45 CODE >117:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+2036 text45 CODE >118:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+2038 text45 CODE >119:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+203A text45 CODE >120:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+203E text45 CODE >128:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+2040 text45 CODE >129:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+2046 text45 CODE >130:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+204A text45 CODE >131:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+2050 text45 CODE >136:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+2052 text45 CODE >137:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+2054 text45 CODE >138:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+2056 text45 CODE >139:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+2058 text45 CODE >140:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+205A text45 CODE >141:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+205C text45 CODE >142:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+205E text45 CODE >143:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+2060 text45 CODE >144:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+2062 text45 CODE >145:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+2064 text45 CODE >146:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+2066 text45 CODE >147:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+2068 text45 CODE >151:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+206A text45 CODE >152:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/pins.c
+285C text44 CODE >45:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/pwm/src/pwm6.c
+285C text44 CODE >50:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/pwm/src/pwm6.c
+2860 text44 CODE >53:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/pwm/src/pwm6.c
+2864 text44 CODE >56:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/pwm/src/pwm6.c
+2868 text44 CODE >58:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/pwm/src/pwm6.c
+286C text44 CODE >61:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/pwm/src/pwm6.c
+28A8 text43 CODE >108:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr0.c
+28A8 text43 CODE >110:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr0.c
+28B0 text43 CODE >111:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr0.c
+2800 text42 CODE >53:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr0.c
+2800 text42 CODE >56:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr0.c
+2804 text42 CODE >59:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr0.c
+2806 text42 CODE >62:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr0.c
+280A text42 CODE >66:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr0.c
+2816 text42 CODE >69:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr0.c
+281A text42 CODE >72:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr0.c
+281E text42 CODE >73:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr0.c
+289E text41 CODE >122:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr2.c
+289E text41 CODE >124:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr2.c
+28A6 text41 CODE >125:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr2.c
+2756 text40 CODE >57:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr2.c
+2756 text40 CODE >61:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr2.c
+275A text40 CODE >63:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr2.c
+275E text40 CODE >65:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr2.c
+2760 text40 CODE >67:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr2.c
+2764 text40 CODE >69:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr2.c
+2766 text40 CODE >72:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr2.c
+2772 text40 CODE >75:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr2.c
+2776 text40 CODE >77:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr2.c
+277A text40 CODE >78:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr2.c
+2894 text39 CODE >122:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr4.c
+2894 text39 CODE >124:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr4.c
+289C text39 CODE >125:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr4.c
+27E0 text38 CODE >57:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr4.c
+27E0 text38 CODE >61:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr4.c
+27E2 text38 CODE >63:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr4.c
+27E4 text38 CODE >65:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr4.c
+27E6 text38 CODE >67:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr4.c
+27E8 text38 CODE >69:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr4.c
+27EA text38 CODE >72:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr4.c
+27F6 text38 CODE >75:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr4.c
+27FA text38 CODE >77:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr4.c
+27FE text38 CODE >78:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr4.c
+288A text37 CODE >122:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr6.c
+288A text37 CODE >124:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr6.c
+2892 text37 CODE >125:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr6.c
+27C0 text36 CODE >57:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr6.c
+27C0 text36 CODE >61:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr6.c
+27C2 text36 CODE >63:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr6.c
+27C4 text36 CODE >65:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr6.c
+27C6 text36 CODE >67:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr6.c
+27C8 text36 CODE >69:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr6.c
+27CA text36 CODE >72:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr6.c
+27D6 text36 CODE >75:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr6.c
+27DA text36 CODE >77:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr6.c
+27DE text36 CODE >78:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr6.c
+2880 text35 CODE >122:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr8.c
+2880 text35 CODE >124:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr8.c
+2888 text35 CODE >125:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr8.c
+277C text34 CODE >57:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr8.c
+277C text34 CODE >61:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr8.c
+2780 text34 CODE >63:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr8.c
+2782 text34 CODE >65:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr8.c
+2784 text34 CODE >67:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr8.c
+2786 text34 CODE >69:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr8.c
+2788 text34 CODE >72:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr8.c
+2794 text34 CODE >75:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr8.c
+2798 text34 CODE >77:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr8.c
+279E text34 CODE >78:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/timer/src/tmr8.c
+272C text33 CODE >38:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/system.c
+272C text33 CODE >40:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/system.c
+2730 text33 CODE >41:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/system.c
+2734 text33 CODE >42:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/system.c
+2738 text33 CODE >43:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/system.c
+273C text33 CODE >44:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/system.c
+2740 text33 CODE >45:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/system.c
+2744 text33 CODE >46:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/system.c
+2748 text33 CODE >47:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/system.c
+274C text33 CODE >48:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/system.c
+2750 text33 CODE >49:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/system.c
+2754 text33 CODE >50:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/system/src/system.c
+206C text32 CODE >7:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\__lldiv.c
+206C text32 CODE >13:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\__lldiv.c
+207C text32 CODE >14:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\__lldiv.c
+2092 text32 CODE >15:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\__lldiv.c
+2096 text32 CODE >16:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\__lldiv.c
+209A text32 CODE >17:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\__lldiv.c
+20A4 text32 CODE >18:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\__lldiv.c
+20A6 text32 CODE >16:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\__lldiv.c
+20B4 text32 CODE >21:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\__lldiv.c
+20BE text32 CODE >22:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\__lldiv.c
+20DC text32 CODE >23:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\__lldiv.c
+20EC text32 CODE >24:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\__lldiv.c
+20EE text32 CODE >26:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\__lldiv.c
+20F8 text32 CODE >27:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\__lldiv.c
+20FE text32 CODE >28:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\__lldiv.c
+20FE text32 CODE >29:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\__lldiv.c
+210E text32 CODE >30:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\__lldiv.c
+2308 text31 CODE >15:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\Umul32.c
+2308 text31 CODE >119:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\Umul32.c
+2318 text31 CODE >121:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\Umul32.c
+2326 text31 CODE >122:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\Umul32.c
+2336 text31 CODE >123:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\Umul32.c
+2340 text31 CODE >124:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\Umul32.c
+234A text31 CODE >125:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\Umul32.c
+2360 text31 CODE >128:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\Umul32.c
+2370 text31 CODE >129:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\Umul32.c
+2294 text30 CODE >7:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
+2294 text30 CODE >13:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
+229C text30 CODE >14:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
+22AE text30 CODE >15:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
+22B2 text30 CODE >16:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
+22B6 text30 CODE >17:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
+22BC text30 CODE >18:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
+22BE text30 CODE >16:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
+22CC text30 CODE >21:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
+22D2 text30 CODE >22:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
+22E8 text30 CODE >23:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
+22F0 text30 CODE >24:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
+22F2 text30 CODE >26:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
+22F8 text30 CODE >27:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
+22FE text30 CODE >28:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
+22FE text30 CODE >29:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
+2306 text30 CODE >30:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\lwdiv.c
+1EEC text29 CODE >52:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+1EEC text29 CODE >53:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+1F20 text29 CODE >55:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+1F70 text29 CODE >56:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+1F8C text29 CODE >58:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+1F9C text29 CODE >61:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+1FAC text29 CODE >63:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+2700 text28 CODE >170:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/adc/src/adc.c
+2702 text28 CODE >172:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/adc/src/adc.c
+2706 text28 CODE >173:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/adc/src/adc.c
+2708 text28 CODE >174:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/adc/src/adc.c
+270A text28 CODE >176:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/adc/src/adc.c
+270A text28 CODE >178:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/adc/src/adc.c
+2718 text28 CODE >180:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/adc/src/adc.c
+272A text28 CODE >181:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/adc/src/adc.c
+25C4 text27 CODE >8:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\safety.c
+25C4 text27 CODE >24:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\safety.c
+25F0 text27 CODE >25:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\safety.c
+25FA text27 CODE >26:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\safety.c
+25FE text27 CODE >27:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\safety.c
+2606 text27 CODE >29:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\safety.c
+26A6 text26 CODE >32:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\safety.c
+26A6 text26 CODE >33:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\safety.c
+26BC text26 CODE >35:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\safety.c
+26D2 text26 CODE >39:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\safety.c
+27A0 text25 CODE >84:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+27A0 text25 CODE >86:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+27A2 text25 CODE >87:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+27A4 text25 CODE >89:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+27AC text25 CODE >92:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+27AE text25 CODE >93:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+27BE text25 CODE >95:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+1E2A text24 CODE >7:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awdiv.c
+1E2A text24 CODE >13:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awdiv.c
+1E2C text24 CODE >14:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awdiv.c
+1E3A text24 CODE >15:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awdiv.c
+1E42 text24 CODE >16:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awdiv.c
+1E46 text24 CODE >18:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awdiv.c
+1E54 text24 CODE >19:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awdiv.c
+1E5C text24 CODE >20:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awdiv.c
+1E60 text24 CODE >22:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awdiv.c
+1E68 text24 CODE >23:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awdiv.c
+1E7A text24 CODE >24:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awdiv.c
+1E7E text24 CODE >25:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awdiv.c
+1E82 text24 CODE >26:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awdiv.c
+1E88 text24 CODE >27:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awdiv.c
+1E8A text24 CODE >25:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awdiv.c
+1E98 text24 CODE >30:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awdiv.c
+1E9E text24 CODE >31:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awdiv.c
+1EB4 text24 CODE >32:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awdiv.c
+1EBC text24 CODE >33:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awdiv.c
+1EBE text24 CODE >35:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awdiv.c
+1EC4 text24 CODE >36:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awdiv.c
+1ECA text24 CODE >38:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awdiv.c
+1EDA text24 CODE >39:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awdiv.c
+1EE2 text24 CODE >40:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awdiv.c
+1EEA text24 CODE >41:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\awdiv.c
+2434 text23 CODE >99:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+2434 text23 CODE >100:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+243C text23 CODE >102:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+2444 text23 CODE >103:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+2452 text23 CODE >104:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+2472 text23 CODE >106:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+248E text23 CODE >107:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+1110 text22 CODE >3:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\inputs.c
+1112 text22 CODE >4:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\inputs.c
+112C text22 CODE >5:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\inputs.c
+113C text22 CODE >6:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\inputs.c
+1166 text22 CODE >7:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\inputs.c
+1176 text22 CODE >8:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\inputs.c
+117E text22 CODE >9:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\inputs.c
+118A text22 CODE >10:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\inputs.c
+11BA text22 CODE >11:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\inputs.c
+11E6 text22 CODE >12:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\inputs.c
+11F0 text22 CODE >13:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\inputs.c
+11FE text22 CODE >14:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\inputs.c
+1202 text22 CODE >15:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\inputs.c
+122E text22 CODE >16:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\inputs.c
+123E text22 CODE >21:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\inputs.c
+124C text22 CODE >22:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\inputs.c
+1254 text22 CODE >23:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\inputs.c
+1260 text22 CODE >24:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\inputs.c
+126C text22 CODE >27:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\inputs.c
+1286 text22 CODE >28:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\inputs.c
+1296 text22 CODE >29:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\inputs.c
+12C0 text22 CODE >30:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\inputs.c
+12D0 text22 CODE >31:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\inputs.c
+12D8 text22 CODE >32:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\inputs.c
+12E4 text22 CODE >33:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\inputs.c
+1314 text22 CODE >34:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\inputs.c
+1340 text22 CODE >35:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\inputs.c
+134A text22 CODE >36:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\inputs.c
+1358 text22 CODE >37:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\inputs.c
+135C text22 CODE >38:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\inputs.c
+1388 text22 CODE >39:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\inputs.c
+139A text22 CODE >42:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\inputs.c
+13A8 text22 CODE >43:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\inputs.c
+13B0 text22 CODE >44:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\inputs.c
+13BC text22 CODE >45:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\inputs.c
+13C8 text22 CODE >48:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\inputs.c
+1D3E text21 CODE >50:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\inputs.c
+1D3E text21 CODE >51:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\inputs.c
+1D58 text21 CODE >52:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\inputs.c
+1D72 text21 CODE >53:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\inputs.c
+1D8C text21 CODE >54:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\inputs.c
+1DA6 text21 CODE >55:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\inputs.c
+1DC0 text21 CODE >56:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\inputs.c
+1DDA text21 CODE >57:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\inputs.c
+1DF4 text21 CODE >59:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\inputs.c
+1E0E text21 CODE >60:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\inputs.c
+1E28 text21 CODE >61:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\inputs.c
+219E text20 CODE >48:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\ledControl.c
+219E text20 CODE >49:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\ledControl.c
+21C0 text20 CODE >50:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\ledControl.c
+21C2 text20 CODE >51:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\ledControl.c
+21E8 text20 CODE >52:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\ledControl.c
+21F8 text20 CODE >53:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\ledControl.c
+21FA text20 CODE >54:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\ledControl.c
+2200 text20 CODE >56:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\ledControl.c
+2210 text20 CODE >57:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\ledControl.c
+2212 text20 CODE >58:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\ledControl.c
+2218 text20 CODE >61:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\ledControl.c
+221A text20 CODE >64:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\ledControl.c
+2608 text19 CODE >66:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\ledControl.c
+2608 text19 CODE >67:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\ledControl.c
+261C text19 CODE >68:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\ledControl.c
+261E text19 CODE >69:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\ledControl.c
+2624 text19 CODE >70:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\ledControl.c
+2638 text19 CODE >71:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\ledControl.c
+263A text19 CODE >72:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\ledControl.c
+2640 text19 CODE >74:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\ledControl.c
+2642 text19 CODE >76:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\ledControl.c
+1C48 text18 CODE >12:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\ledControl.c
+1C48 text18 CODE >14:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\ledControl.c
+1C6A text18 CODE >15:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\ledControl.c
+1C6C text18 CODE >16:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\ledControl.c
+1C90 text18 CODE >17:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\ledControl.c
+1CA0 text18 CODE >18:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\ledControl.c
+1CA2 text18 CODE >19:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\ledControl.c
+1CA8 text18 CODE >21:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\ledControl.c
+1CB8 text18 CODE >22:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\ledControl.c
+1CBA text18 CODE >23:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\ledControl.c
+1CC0 text18 CODE >26:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\ledControl.c
+1CC2 text18 CODE >30:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\ledControl.c
+1CE2 text18 CODE >31:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\ledControl.c
+1CE4 text18 CODE >32:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\ledControl.c
+1D0A text18 CODE >33:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\ledControl.c
+1D1A text18 CODE >34:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\ledControl.c
+1D1C text18 CODE >35:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\ledControl.c
+1D22 text18 CODE >36:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\ledControl.c
+1D32 text18 CODE >37:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\ledControl.c
+1D34 text18 CODE >38:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\ledControl.c
+1D3A text18 CODE >40:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\ledControl.c
+1D3C text18 CODE >46:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\ledControl.c
+26D4 text17 CODE >3:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\ledControl.c
+26D4 text17 CODE >4:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\ledControl.c
+26F6 text17 CODE >5:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\ledControl.c
+26FC text17 CODE >7:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\ledControl.c
+26FE text17 CODE >10:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\ledControl.c
+284A text16 CODE >92:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\ledControl.c
+284A text16 CODE >93:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\ledControl.c
+284E text16 CODE >94:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\ledControl.c
+2852 text16 CODE >95:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\ledControl.c
+2856 text16 CODE >96:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\ledControl.c
+285A text16 CODE >97:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\ledControl.c
+2678 text15 CODE >41:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\safety.c
+2678 text15 CODE >42:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\safety.c
+268E text15 CODE >44:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\safety.c
+26A4 text15 CODE >47:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\safety.c
+2644 text14 CODE >63:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/pwm/src/pwm6.c
+2644 text14 CODE >66:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/pwm/src/pwm6.c
+265C text14 CODE >69:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/pwm/src/pwm6.c
+2676 text14 CODE >70:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\mcc_generated_files/pwm/src/pwm6.c
+83E text13 CODE >10:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+83E text13 CODE >21:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+844 text13 CODE >22:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+84A text13 CODE >23:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+858 text13 CODE >24:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+85A text13 CODE >28:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+86A text13 CODE >30:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+87A text13 CODE >32:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+88A text13 CODE >35:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+88C text13 CODE >37:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+88E text13 CODE >38:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+892 text13 CODE >41:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+8A2 text13 CODE >44:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+8A8 text13 CODE >46:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+8BA text13 CODE >47:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+8BC text13 CODE >49:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+8C2 text13 CODE >50:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+8D0 text13 CODE >51:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+8D2 text13 CODE >55:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+8E2 text13 CODE >57:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+8F2 text13 CODE >59:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+902 text13 CODE >62:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+904 text13 CODE >64:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+906 text13 CODE >65:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+90A text13 CODE >68:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+91A text13 CODE >75:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+92C text13 CODE >77:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+93A text13 CODE >78:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+93E text13 CODE >81:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+942 text13 CODE >82:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+946 text13 CODE >83:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+94A text13 CODE >84:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+94E text13 CODE >85:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+952 text13 CODE >86:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+956 text13 CODE >87:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+95A text13 CODE >88:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+95E text13 CODE >89:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+962 text13 CODE >90:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+966 text13 CODE >91:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+96A text13 CODE >92:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+96E text13 CODE >93:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+972 text13 CODE >94:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+976 text13 CODE >95:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+97A text13 CODE >98:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+97C text13 CODE >100:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+9A6 text13 CODE >101:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+9C2 text13 CODE >102:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+9D2 text13 CODE >103:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+9D6 text13 CODE >104:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+9DA text13 CODE >106:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+9DA text13 CODE >109:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+9E8 text13 CODE >110:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+9F0 text13 CODE >111:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+9F4 text13 CODE >113:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+9F8 text13 CODE >115:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+A06 text13 CODE >116:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+A08 text13 CODE >118:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+A12 text13 CODE >119:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+A14 text13 CODE >106:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+A14 text13 CODE >120:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+A26 text13 CODE >121:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+A26 text13 CODE >124:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+A34 text13 CODE >127:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+A44 text13 CODE >128:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+A58 text13 CODE >132:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+A68 text13 CODE >134:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+A76 text13 CODE >135:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+A84 text13 CODE >136:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+A8C text13 CODE >137:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+A90 text13 CODE >139:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+A94 text13 CODE >141:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+AA2 text13 CODE >142:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+AA4 text13 CODE >144:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+AAE text13 CODE >145:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+AB4 text13 CODE >153:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+ADA text13 CODE >154:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+B0A text13 CODE >155:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+B0E text13 CODE >156:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+B10 text13 CODE >157:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+B20 text13 CODE >158:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+B30 text13 CODE >162:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+B40 text13 CODE >163:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+B40 text13 CODE >166:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+B66 text13 CODE >167:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+B7A text13 CODE >172:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+B84 text13 CODE >173:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+B92 text13 CODE >174:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+B94 text13 CODE >176:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+BA2 text13 CODE >177:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+BA6 text13 CODE >178:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+BAA text13 CODE >180:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+BAE text13 CODE >182:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+BBE text13 CODE >183:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+BC0 text13 CODE >171:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+BCE text13 CODE >186:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+BCE text13 CODE >192:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+BD0 text13 CODE >193:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+BDE text13 CODE >194:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+BF4 text13 CODE >195:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+BF8 text13 CODE >196:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+BFC text13 CODE >197:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+BFC text13 CODE >198:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+C0E text13 CODE >202:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+C0E text13 CODE >203:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+C1E text13 CODE >204:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+C2A text13 CODE >205:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+C38 text13 CODE >206:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+C62 text13 CODE >207:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+C72 text13 CODE >208:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+C74 text13 CODE >215:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+C94 text13 CODE >216:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+CA4 text13 CODE >218:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+CB4 text13 CODE >219:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+CB6 text13 CODE >221:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+CB6 text13 CODE >225:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+CC4 text13 CODE >226:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+CC6 text13 CODE >227:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+CCA text13 CODE >230:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+CCC text13 CODE >232:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+CD2 text13 CODE >233:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+CE0 text13 CODE >234:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+CE2 text13 CODE >236:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+CF2 text13 CODE >237:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+1B44 text12 CODE >4:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\flge.c
+1B44 text12 CODE >7:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\flge.c
+1B72 text12 CODE >8:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\flge.c
+1B82 text12 CODE >9:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\flge.c
+1BB0 text12 CODE >10:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\flge.c
+1BC0 text12 CODE >12:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\flge.c
+1BCE text12 CODE >13:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\flge.c
+1BE0 text12 CODE >14:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\flge.c
+1BEE text12 CODE >15:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\flge.c
+1C00 text12 CODE >16:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\flge.c
+1C10 text12 CODE >17:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\flge.c
+1C20 text12 CODE >18:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\flge.c
+1C46 text12 CODE >19:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\flge.c
+1A3E text11 CODE >43:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\fltol.c
+1A3E text11 CODE >47:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\fltol.c
+1A54 text11 CODE >48:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\fltol.c
+1A68 text11 CODE >49:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\fltol.c
+1A92 text11 CODE >50:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\fltol.c
+1A94 text11 CODE >51:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\fltol.c
+1AA4 text11 CODE >52:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\fltol.c
+1AA8 text11 CODE >53:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\fltol.c
+1AB6 text11 CODE >54:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\fltol.c
+1ACE text11 CODE >57:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\fltol.c
+1AE2 text11 CODE >60:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\fltol.c
+1AF6 text11 CODE >63:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\fltol.c
+1B00 text11 CODE >64:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\fltol.c
+1B02 text11 CODE >62:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\fltol.c
+1B12 text11 CODE >67:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\fltol.c
+1B22 text11 CODE >68:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\fltol.c
+1B32 text11 CODE >69:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\fltol.c
+1B42 text11 CODE >70:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\fltol.c
+13CA text10 CODE >10:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\xxtofl.c
+13CC text10 CODE >15:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\xxtofl.c
+13EA text10 CODE >16:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\xxtofl.c
+141C text10 CODE >17:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\xxtofl.c
+1420 text10 CODE >18:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\xxtofl.c
+1420 text10 CODE >19:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\xxtofl.c
+1430 text10 CODE >21:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\xxtofl.c
+1446 text10 CODE >22:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\xxtofl.c
+145A text10 CODE >23:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\xxtofl.c
+145E text10 CODE >24:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\xxtofl.c
+1462 text10 CODE >25:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\xxtofl.c
+1464 text10 CODE >26:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\xxtofl.c
+146E text10 CODE >24:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\xxtofl.c
+14A0 text10 CODE >29:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\xxtofl.c
+14A2 text10 CODE >30:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\xxtofl.c
+14AE text10 CODE >31:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\xxtofl.c
+14B8 text10 CODE >28:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\xxtofl.c
+14B8 text10 CODE >32:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\xxtofl.c
+14EA text10 CODE >34:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\xxtofl.c
+14EC text10 CODE >35:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\xxtofl.c
+14F6 text10 CODE >33:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\xxtofl.c
+1514 text10 CODE >37:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\xxtofl.c
+1522 text10 CODE >38:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\xxtofl.c
+1524 text10 CODE >39:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\xxtofl.c
+1528 text10 CODE >40:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\xxtofl.c
+154C text10 CODE >41:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\xxtofl.c
+156A text10 CODE >42:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\xxtofl.c
+156C text10 CODE >43:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\xxtofl.c
+157C text10 CODE >44:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\xxtofl.c
+157E text9 CODE >44:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\motorState.c
+157E text9 CODE >45:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\motorState.c
+1580 text9 CODE >46:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\motorState.c
+1582 text9 CODE >47:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\motorState.c
+1584 text9 CODE >51:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\motorState.c
+1594 text9 CODE >53:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\motorState.c
+15AA text9 CODE >56:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\motorState.c
+15BA text9 CODE >57:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\motorState.c
+15D6 text9 CODE >59:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\motorState.c
+15F8 text9 CODE >62:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\motorState.c
+160E text9 CODE >64:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\motorState.c
+161A text9 CODE >65:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\motorState.c
+163C text9 CODE >67:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\motorState.c
+1670 text9 CODE >70:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\motorState.c
+16A2 text9 CODE >71:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\motorState.c
+16B2 text9 CODE >76:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\motorState.c
+16CE text9 CODE >77:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\motorState.c
+16DA text9 CODE >78:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\motorState.c
+16FC text9 CODE >80:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\motorState.c
+1704 text9 CODE >83:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\motorState.c
+181C text8 CODE >13:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\motorState.c
+181C text8 CODE >15:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\motorState.c
+181E text8 CODE >16:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\motorState.c
+1820 text8 CODE >17:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\motorState.c
+1822 text8 CODE >19:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\motorState.c
+1832 text8 CODE >21:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\motorState.c
+1848 text8 CODE >22:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\motorState.c
+1858 text8 CODE >23:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\motorState.c
+1874 text8 CODE >27:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\motorState.c
+188A text8 CODE >28:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\motorState.c
+18BE text8 CODE >30:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\motorState.c
+18F0 text8 CODE >31:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\motorState.c
+1900 text8 CODE >35:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\motorState.c
+191C text8 CODE >36:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\motorState.c
+1928 text8 CODE >39:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\motorState.c
+1930 text8 CODE >42:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\motorState.c
+257E text7 CODE >245:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+257E text7 CODE >248:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+258E text7 CODE >249:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+25C2 text7 CODE >250:C:\Program Files\Microchip\xc8\v3.00\pic\sources\c99\common\sprcadd.c
+1706 text6 CODE >85:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\motorState.c
+1706 text6 CODE >89:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\motorState.c
+171C text6 CODE >90:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\motorState.c
+172E text6 CODE >91:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\motorState.c
+1762 text6 CODE >93:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\motorState.c
+1794 text6 CODE >94:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\motorState.c
+17A4 text6 CODE >97:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\motorState.c
+17C0 text6 CODE >98:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\motorState.c
+17E2 text6 CODE >99:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\motorState.c
+17EE text6 CODE >102:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\motorState.c
+17FC text6 CODE >106:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\motorState.c
+17FE text6 CODE >107:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\motorState.c
+180A text6 CODE >108:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\motorState.c
+181A text6 CODE >110:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\motorState.c
+CF4 text5 CODE >4:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+CF4 text5 CODE >6:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+CF8 text5 CODE >8:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+CFC text5 CODE >9:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+D1E text5 CODE >10:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+D26 text5 CODE >11:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+D3A text5 CODE >12:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+D42 text5 CODE >13:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+D56 text5 CODE >14:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+D5E text5 CODE >15:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+D72 text5 CODE >16:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+D82 text5 CODE >17:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+D8A text5 CODE >18:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+DA2 text5 CODE >20:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+DB2 text5 CODE >21:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+DBA text5 CODE >22:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+DD2 text5 CODE >35:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+DD6 text5 CODE >36:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+DF8 text5 CODE >37:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+E00 text5 CODE >38:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+E18 text5 CODE >40:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+E2C text5 CODE >42:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+E3C text5 CODE >43:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+E50 text5 CODE >45:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+E64 text5 CODE >47:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+E78 text5 CODE >49:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+E8C text5 CODE >63:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+E90 text5 CODE >64:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+E98 text5 CODE >65:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+EBE text5 CODE >67:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+ED2 text5 CODE >69:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+EE6 text5 CODE >77:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+EEA text5 CODE >78:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+EF2 text5 CODE >79:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+EFC text5 CODE >80:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+F20 text5 CODE >82:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+F34 text5 CODE >84:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+F44 text5 CODE >85:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+F4C text5 CODE >86:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+F64 text5 CODE >88:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+F78 text5 CODE >90:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+F8C text5 CODE >98:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+F90 text5 CODE >99:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+FA6 text5 CODE >109:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+FAA text5 CODE >110:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+FD0 text5 CODE >112:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+FE4 text5 CODE >114:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+FF8 text5 CODE >116:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+100C text5 CODE >118:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+101C text5 CODE >119:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+1030 text5 CODE >121:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+1044 text5 CODE >132:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+1048 text5 CODE >133:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+106E text5 CODE >135:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+107E text5 CODE >136:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+1092 text5 CODE >138:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+10A6 text5 CODE >140:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+10BA text5 CODE >149:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+10C6 text5 CODE >149:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+10D4 text5 CODE >149:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+10DC text5 CODE >149:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+10E4 text5 CODE >149:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+10EC text5 CODE >149:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+10F4 text5 CODE >149:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+10FC text5 CODE >149:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+1104 text5 CODE >149:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+110E text5 CODE >152:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\rockoStateMachine.c
+2110 text4 CODE >27:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+2110 text4 CODE >29:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+2118 text4 CODE >30:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+2120 text4 CODE >33:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+2140 text4 CODE >34:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+2150 text4 CODE >35:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+2154 text4 CODE >36:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+2158 text4 CODE >37:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+215A text4 CODE >41:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+216A text4 CODE >42:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+2176 text4 CODE >43:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+218A text4 CODE >44:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+2194 text4 CODE >49:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+2198 text4 CODE >50:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+219C text4 CODE >51:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+2838 text3 CODE >65:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+2838 text3 CODE >66:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+2844 text3 CODE >67:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+2848 text3 CODE >68:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+1932 text2 CODE >18:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\timers.c
+1932 text2 CODE >19:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\timers.c
+195C text2 CODE >20:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\timers.c
+1984 text2 CODE >21:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\timers.c
+1990 text2 CODE >23:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\timers.c
+19B6 text2 CODE >24:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\timers.c
+19C2 text2 CODE >25:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\timers.c
+19CE text2 CODE >26:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\timers.c
+19DA text2 CODE >27:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\timers.c
+1A06 text2 CODE >28:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\timers.c
+1A2E text2 CODE >29:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\timers.c
+1A3C text2 CODE >31:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\timers.c
+23D8 text1 CODE >5:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\timers.c
+23D8 text1 CODE >6:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\timers.c
+23E8 text1 CODE >7:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\timers.c
+23EA text1 CODE >10:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\timers.c
+23F6 text1 CODE >11:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\timers.c
+2402 text1 CODE >12:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\timers.c
+240E text1 CODE >13:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\timers.c
+241A text1 CODE >14:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\timers.c
+2426 text1 CODE >15:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\timers.c
+2432 text1 CODE >16:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\timers.c
+2534 text0 CODE >108:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+2534 text0 CODE >109:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+2538 text0 CODE >111:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+253C text0 CODE >112:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+2540 text0 CODE >113:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+2542 text0 CODE >114:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+2544 text0 CODE >115:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+2548 text0 CODE >116:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+254A text0 CODE >117:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+254A text0 CODE >122:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+2556 text0 CODE >123:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+255A text0 CODE >124:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+255E text0 CODE >125:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+2562 text0 CODE >126:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+2566 text0 CODE >127:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+256A text0 CODE >129:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+256E text0 CODE >130:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+2572 text0 CODE >131:C:\Users\jared\OneDrive\Documents\Rocko_v0.X\main.c
+2372 cinit CODE >24768:C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_1.s
+2372 cinit CODE >24770:C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_1.s
+2372 cinit CODE >24773:C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_1.s
+2372 cinit CODE >24988:C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_1.s
+2374 cinit CODE >24989:C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_1.s
+2376 cinit CODE >24990:C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_1.s
+2378 cinit CODE >24991:C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_1.s
+237A cinit CODE >24992:C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_1.s
+237C cinit CODE >24993:C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_1.s
+237E cinit CODE >24994:C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_1.s
+2382 cinit CODE >24995:C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_1.s
+2386 cinit CODE >24996:C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_1.s
+2386 cinit CODE >24997:C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_1.s
+2388 cinit CODE >24998:C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_1.s
+238C cinit CODE >24999:C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_1.s
+238E cinit CODE >25000:C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_1.s
+2390 cinit CODE >25001:C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_1.s
+2392 cinit CODE >25005:C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_1.s
+2394 cinit CODE >25006:C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_1.s
+2396 cinit CODE >25007:C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_1.s
+2398 cinit CODE >25008:C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_1.s
+239A cinit CODE >25009:C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_1.s
+239C cinit CODE >25010:C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_1.s
+239E cinit CODE >25011:C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_1.s
+23A2 cinit CODE >25012:C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_1.s
+23A6 cinit CODE >25013:C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_1.s
+23A6 cinit CODE >25014:C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_1.s
+23A8 cinit CODE >25015:C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_1.s
+23AC cinit CODE >25016:C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_1.s
+23AE cinit CODE >25017:C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_1.s
+23B0 cinit CODE >25018:C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_1.s
+23B2 cinit CODE >25022:C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_1.s
+23B6 cinit CODE >25023:C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_1.s
+23B8 cinit CODE >25024:C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_1.s
+23B8 cinit CODE >25025:C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_1.s
+23BA cinit CODE >25026:C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_1.s
+23BC cinit CODE >25027:C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_1.s
+23BE cinit CODE >25030:C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_1.s
+23C2 cinit CODE >25031:C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_1.s
+23C4 cinit CODE >25032:C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_1.s
+23C4 cinit CODE >25033:C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_1.s
+23C6 cinit CODE >25034:C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_1.s
+23C8 cinit CODE >25035:C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_1.s
+23CA cinit CODE >25041:C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_1.s
+23CA cinit CODE >25043:C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_1.s
+23CC cinit CODE >25044:C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_1.s
+23CE cinit CODE >25046:C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_1.s
+23D0 cinit CODE >25047:C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_1.s
+23D2 cinit CODE >25048:C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_1.s
+23D4 cinit CODE >25049:C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_1.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___awdiv@counter 27 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+_updatePulsesAndDirection 2110 0 CODE 0 text4 dist/test/debug\Rocko_v0.X.debug.o
+__LdataBANK0 0 0 ABS 0 dataBANK0 dist/test/debug\Rocko_v0.X.debug.o
+__Lmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/test/debug\Rocko_v0.X.debug.o
+__Hspace_0 28E6 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+__Hspace_1 F0 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+__Hspace_2 0 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+__Hspace_4 60000C 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+__end_of_ADC_ThresholdISR 28E0 0 CODE 0 text54 dist/test/debug\Rocko_v0.X.debug.o
+__HidataBANK0 0 0 ABS 0 idataBANK0 dist/test/debug\Rocko_v0.X.debug.o
+getAverageMotorCurrent@sum 2D 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+TMR6_OverflowCallbackRegister@InterruptHandler 23 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+_PWM6CON FA4 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_PWM6DCH FA3 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_PWM6DCL FA2 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+__Hibigdata 0 0 CODE 0 ibigdata dist/test/debug\Rocko_v0.X.debug.o
+__mediumconst 800 0 SMALLCONST 0 smallconst dist/test/debug\Rocko_v0.X.debug.o
+_INT0_DefaultInterruptHandler 0 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+__Heeprom_data 0 0 EEDATA 0 eeprom_data dist/test/debug\Rocko_v0.X.debug.o
+__end_of_INTERRUPT_Initialize 2534 0 CODE 0 text46 dist/test/debug\Rocko_v0.X.debug.o
+__L__absolute__ 0 0 ABS 0 __absolute__ dist/test/debug\Rocko_v0.X.debug.o
+_INT3_DefaultInterruptHandler 0 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_TMR4_PeriodCountSet 0 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_T8RSTbits F2D 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+__Lsmallconst 800 0 SMALLCONST 0 smallconst dist/test/debug\Rocko_v0.X.debug.o
+_motorDelayTimer 4B 0 COMRAM 1 dataCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+_LATA F79 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_LATB F7A 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_LATC F7B 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_LATD F7C 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_LATE F7D 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_LATF F7E 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_LATG F7F 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_LATH F80 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_T2PR FBC 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_T4PR FB6 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_T6PR FB0 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_T8PR F29 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_TMR2 FBB 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_TMR4 FB5 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_TMR6 FAF 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_TMR8 F28 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_WPUA E91 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_WPUB E99 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_WPUC EA1 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_WPUD EA6 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_WPUE EAE 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_WPUF EB3 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_WPUG EBB 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_WPUH EC0 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+___sp 0 0 STACK 2 stack C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_9.o
+_main 2534 0 CODE 0 text0 dist/test/debug\Rocko_v0.X.debug.o
+btemp 5F 0 COMRAM 1 temp dist/test/debug\Rocko_v0.X.debug.o
+___stack_hi 0 0 STACK 2 stack C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_9.o
+___stack_lo 0 0 STACK 2 stack C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_9.o
+start 66 0 CODE 0 init C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_9.o
+_PWM6_LoadDutyValue 2644 0 CODE 0 text14 dist/test/debug\Rocko_v0.X.debug.o
+__end_of_motorDirectionLED 2644 0 CODE 0 text19 dist/test/debug\Rocko_v0.X.debug.o
+__HbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+INT2_SetInterruptHandler@InterruptHandler 23 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+_closeLimit 60 0 BANK0 1 dataBANK0 dist/test/debug\Rocko_v0.X.debug.o
+_updateTimer 1932 0 CODE 0 text2 dist/test/debug\Rocko_v0.X.debug.o
+_TMR0_OverflowCallback E6 0 BANK0 1 nvBANK0 dist/test/debug\Rocko_v0.X.debug.o
+__end_of_TMR6_OverflowCallbackRegister 2894 0 CODE 0 text37 dist/test/debug\Rocko_v0.X.debug.o
+_INT2_SetInterruptHandler 28BC 0 CODE 0 text48 dist/test/debug\Rocko_v0.X.debug.o
+?___lmul 23 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+_TMR8_OverflowCallbackRegister 2880 0 CODE 0 text35 dist/test/debug\Rocko_v0.X.debug.o
+_PWM6_Initialize 285C 0 CODE 0 text44 dist/test/debug\Rocko_v0.X.debug.o
+__LidataBANK0 0 0 ABS 0 idataBANK0 dist/test/debug\Rocko_v0.X.debug.o
+__Hpowerup 0 0 CODE 0 powerup dist/test/debug\Rocko_v0.X.debug.o
+_TMR0_Stop 0 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_TMR2_Initialize 2756 0 CODE 0 text40 dist/test/debug\Rocko_v0.X.debug.o
+ttemp5 60 0 COMRAM 1 temp dist/test/debug\Rocko_v0.X.debug.o
+ttemp6 63 0 COMRAM 1 temp dist/test/debug\Rocko_v0.X.debug.o
+ttemp7 67 0 COMRAM 1 temp dist/test/debug\Rocko_v0.X.debug.o
+__end_of_Timer0 80D 0 SMALLCONST 0 smallconst dist/test/debug\Rocko_v0.X.debug.o
+__end_of_Timer2 819 0 SMALLCONST 0 smallconst dist/test/debug\Rocko_v0.X.debug.o
+__end_of_Timer4 825 0 SMALLCONST 0 smallconst dist/test/debug\Rocko_v0.X.debug.o
+__end_of_Timer6 831 0 SMALLCONST 0 smallconst dist/test/debug\Rocko_v0.X.debug.o
+__end_of_Timer8 83D 0 SMALLCONST 0 smallconst dist/test/debug\Rocko_v0.X.debug.o
+__LnvCOMRAM 0 0 ABS 0 nvCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+__HdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+__end_of_safetyLed 1D3E 0 CODE 0 text18 dist/test/debug\Rocko_v0.X.debug.o
+__end_of_commandFilter 13CA 0 CODE 0 text22 dist/test/debug\Rocko_v0.X.debug.o
+_ADC_ChannelSelectAndConvert 2700 0 CODE 0 text28 dist/test/debug\Rocko_v0.X.debug.o
+_motorClose 157E 0 CODE 0 text9 dist/test/debug\Rocko_v0.X.debug.o
+_ADC_ThresholdCallback 1B 0 COMRAM 1 bssCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+_TMR2_Stop 0 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+__accesstop 60 0 ABS 0 - C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_9.o
+_T6HLTbits FB2 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+intlevel0 0 0 CODE 0 text C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_9.o
+intlevel1 0 0 CODE 0 text C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_9.o
+intlevel2 0 0 CODE 0 text C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_9.o
+intlevel3 0 0 CODE 0 text C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_9.o
+_stepSize 44 0 COMRAM 1 dataCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+__LbssCOMRAM 0 0 ABS 0 bssCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+_TMR6_PeriodCountSet 0 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+updatePulsesAndDirection@hall1_state 23 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+__LnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/test/debug\Rocko_v0.X.debug.o
+__end_of_TMR8_Initialize 27A0 0 CODE 0 text34 dist/test/debug\Rocko_v0.X.debug.o
+wtemp8 60 0 COMRAM 1 temp dist/test/debug\Rocko_v0.X.debug.o
+_TMR4_Stop 0 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_delayBeforeReverse 51 0 COMRAM 1 dataCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+PWM6_LoadDutyValue@dutyValue 23 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+__Hifardata 0 0 CODE 0 ifardata dist/test/debug\Rocko_v0.X.debug.o
+_T8CLKCON F2C 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+___awdiv@sign 28 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+_TMR6_Stop 0 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+__Hclrtext 0 0 ABS 0 clrtext dist/test/debug\Rocko_v0.X.debug.o
+__pidataCOMRAM 2820 0 CODE 0 idataCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+_TMR8_Start 0 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_TMR8_Tasks 0 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+__end_of_INT1_SetInterruptHandler 28D0 0 CODE 0 text49 dist/test/debug\Rocko_v0.X.debug.o
+_safetyLed 1C48 0 CODE 0 text18 dist/test/debug\Rocko_v0.X.debug.o
+updateTimer@timerName 23 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+_TMR8_Stop 0 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_ADACCH F71 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_ADACCL F70 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_ADCON0 F60 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_ADCON1 F59 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_ADCON2 F5A 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_ADCON3 F5B 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_ADERRH F6F 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_ADERRL F6E 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_ADLTHH F6B 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_ADLTHL F6A 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_ADRESH F64 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_ADRESL F63 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_ADSTAT F65 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_ADUTHH F6D 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_ADUTHL F6C 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_ANSELA E92 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_ANSELB E9A 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_ANSELD EA7 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_ANSELE EAF 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_ANSELF EB4 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_ANSELG EBC 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+___awdiv@dividend 23 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+___inthi_sp 0 0 STACK 2 stack C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_9.o
+___intlo_sp 0 0 STACK 2 stack C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_9.o
+_T6RSTbits FB4 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_cmdSingle 90 0 BANK0 1 dataBANK0 dist/test/debug\Rocko_v0.X.debug.o
+__LdataCOMRAM 0 0 ABS 0 dataCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+_cmdStopPb 78 0 BANK0 1 dataBANK0 dist/test/debug\Rocko_v0.X.debug.o
+_cmdStopSw 70 0 BANK0 1 dataBANK0 dist/test/debug\Rocko_v0.X.debug.o
+__end_of_INTERRUPT_InterruptManager 66 0 CODE 0 intcode dist/test/debug\Rocko_v0.X.debug.o
+_TMR0_DefaultOverflowCallback 0 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_ADC_ConversionDoneCallback 1D 0 COMRAM 1 bssCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+__Hintcode_body 0 0 ABS 0 intcode_body dist/test/debug\Rocko_v0.X.debug.o
+__end_of___flge 1C48 0 CODE 0 text12 dist/test/debug\Rocko_v0.X.debug.o
+__end_of___lmul 2372 0 CODE 0 text31 dist/test/debug\Rocko_v0.X.debug.o
+__Lintsave_regs 0 0 BIGRAM 1 intsave_regs dist/test/debug\Rocko_v0.X.debug.o
+_closeSafety1 AE 0 BANK0 1 dataBANK0 dist/test/debug\Rocko_v0.X.debug.o
+_closeSafety2 A8 0 BANK0 1 dataBANK0 dist/test/debug\Rocko_v0.X.debug.o
+_TMR8_PeriodCountSet 0 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+__Hmediumconst 0 0 MEDIUMCONST 0 mediumconst dist/test/debug\Rocko_v0.X.debug.o
+_cmdClose 98 0 BANK0 1 dataBANK0 dist/test/debug\Rocko_v0.X.debug.o
+_TMR6_DefaultOverflowCallback 0 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+__LnvBANK0 0 0 ABS 0 nvBANK0 dist/test/debug\Rocko_v0.X.debug.o
+__Hintcodelo 18 0 CODE 0 intcodelo dist/test/debug\Rocko_v0.X.debug.o
+___awdiv@divisor 25 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+__end_of___awdiv 1EEC 0 CODE 0 text24 dist/test/debug\Rocko_v0.X.debug.o
+resistive_safetyCheck@safety 2A 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+__end_of___fladd CF4 0 CODE 0 text13 dist/test/debug\Rocko_v0.X.debug.o
+__end_of___flsub 25C4 0 CODE 0 text7 dist/test/debug\Rocko_v0.X.debug.o
+__end_of___fltol 1B44 0 CODE 0 text11 dist/test/debug\Rocko_v0.X.debug.o
+_motorDirectionLED 2608 0 CODE 0 text19 dist/test/debug\Rocko_v0.X.debug.o
+__end_of___lldiv 2110 0 CODE 0 text32 dist/test/debug\Rocko_v0.X.debug.o
+__end_of___lwdiv 2308 0 CODE 0 text30 dist/test/debug\Rocko_v0.X.debug.o
+__end_of_motorClose 1706 0 CODE 0 text9 dist/test/debug\Rocko_v0.X.debug.o
+_TMR8_Initialize 277C 0 CODE 0 text34 dist/test/debug\Rocko_v0.X.debug.o
+_INLVLA E8E 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_INLVLB E96 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_INLVLC E9E 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_INLVLD EA3 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_INLVLE EAB 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_INLVLF EB0 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_INLVLG EB8 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_INLVLH EBD 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_T4HLTbits FB8 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+___lwdiv@quotient 27 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+_rockoState 48 0 COMRAM 1 dataCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+__LidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+___fladd@a 27 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+___fladd@b 23 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+___flsub@a 37 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+___flsub@b 33 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+__HnvCOMRAM 0 0 ABS 0 nvCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+___lldiv@counter 3B 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+__Lintcodelo 18 0 CODE 0 intcodelo dist/test/debug\Rocko_v0.X.debug.o
+_PIN_MANAGER_Initialize 1FAE 0 CODE 0 text45 dist/test/debug\Rocko_v0.X.debug.o
+_maxRunTimer C6 0 BANK0 1 dataBANK0 dist/test/debug\Rocko_v0.X.debug.o
+_WPUBbits E99 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+__end_of_inputs 1E2A 0 CODE 0 text21 dist/test/debug\Rocko_v0.X.debug.o
+start_initialization 2372 0 CODE 0 cinit dist/test/debug\Rocko_v0.X.debug.o
+__end_of_timerInterruptHandler 284A 0 CODE 0 text3 dist/test/debug\Rocko_v0.X.debug.o
+_ODCONA E90 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_ODCONB E98 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_ODCONC EA0 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_ODCOND EA5 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_ODCONE EAD 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_ODCONF EB2 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_ODCONG EBA 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_ODCONH EBF 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_OSCFRQ E49 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_dircetion 4A 0 COMRAM 1 dataCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+__HnvFARRAM 0 0 FARRAM 0 nvFARRAM dist/test/debug\Rocko_v0.X.debug.o
+_TRISBbits F82 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_TRISDbits F84 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_TRISEbits F85 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_TRISFbits F86 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+___lldiv@dividend 2F 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+_motorCurrent 19 0 COMRAM 1 bssCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+_ADC_ISR 28E0 0 CODE 0 text55 dist/test/debug\Rocko_v0.X.debug.o
+_ADFLTRH F73 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_ADFLTRL F72 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_direction 21 0 COMRAM 1 bssCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+_ADPREVH F62 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_ADPREVL F61 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+___rparam_used 1 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+__end_of_TMR2_OverflowCallbackRegister 28A8 0 CODE 0 text41 dist/test/debug\Rocko_v0.X.debug.o
+_ADSTPTH F69 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_ADSTPTL F68 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_RE6PPS E78 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+__end_of_SYSTEM_Initialize 2756 0 CODE 0 text33 dist/test/debug\Rocko_v0.X.debug.o
+_TMR4_OverflowCallbackRegister 2894 0 CODE 0 text39 dist/test/debug\Rocko_v0.X.debug.o
+_T4RSTbits FBA 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_T0CON0 FD5 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_T0CON1 FD6 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_cycle_nsleep 27A0 0 CODE 0 text25 dist/test/debug\Rocko_v0.X.debug.o
+_T2CLKCON FBF 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_TMR0IF 719D 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_timerInterruptHandler 2838 0 CODE 0 text3 dist/test/debug\Rocko_v0.X.debug.o
+_TMR2_Start 0 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_TMR2_Tasks 0 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_INT2_DefaultInterruptHandler 0 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_Timer0 801 0 SMALLCONST 0 smallconst dist/test/debug\Rocko_v0.X.debug.o
+_Timer2 80D 0 SMALLCONST 0 smallconst dist/test/debug\Rocko_v0.X.debug.o
+_Timer4 819 0 SMALLCONST 0 smallconst dist/test/debug\Rocko_v0.X.debug.o
+_Timer6 825 0 SMALLCONST 0 smallconst dist/test/debug\Rocko_v0.X.debug.o
+_Timer8 831 0 SMALLCONST 0 smallconst dist/test/debug\Rocko_v0.X.debug.o
+__end_of_TMR4_Initialize 2800 0 CODE 0 text38 dist/test/debug\Rocko_v0.X.debug.o
+isa$xinst 0 0 ABS 0 - C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_9.o
+_INT3_SetInterruptHandler 28B2 0 CODE 0 text47 dist/test/debug\Rocko_v0.X.debug.o
+ADC_ChannelSelectAndConvert@channel 27 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+_currentDutyCycle 46 0 COMRAM 1 dataCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+__Hbank0 0 0 ABS 0 bank0 dist/test/debug\Rocko_v0.X.debug.o
+__Hbank1 0 0 ABS 0 bank1 dist/test/debug\Rocko_v0.X.debug.o
+__Hbank2 0 0 ABS 0 bank2 dist/test/debug\Rocko_v0.X.debug.o
+__Hbank3 0 0 ABS 0 bank3 dist/test/debug\Rocko_v0.X.debug.o
+__Hbank4 0 0 ABS 0 bank4 dist/test/debug\Rocko_v0.X.debug.o
+__Hbank5 0 0 ABS 0 bank5 dist/test/debug\Rocko_v0.X.debug.o
+__Hbank6 0 0 ABS 0 bank6 dist/test/debug\Rocko_v0.X.debug.o
+__Hbank7 0 0 ABS 0 bank7 dist/test/debug\Rocko_v0.X.debug.o
+__Hcinit 0 0 ABS 0 cinit dist/test/debug\Rocko_v0.X.debug.o
+__Hconst 0 0 CONST 0 const dist/test/debug\Rocko_v0.X.debug.o
+__Hidata 0 0 CODE 0 idata dist/test/debug\Rocko_v0.X.debug.o
+__Hidloc 0 0 ABS 0 idloc dist/test/debug\Rocko_v0.X.debug.o
+__Hnvbit 0 0 COMRAM 1 nvbit dist/test/debug\Rocko_v0.X.debug.o
+__Hparam 0 0 COMRAM 1 rparam dist/test/debug\Rocko_v0.X.debug.o
+__Hrdata 0 0 COMRAM 1 rdata dist/test/debug\Rocko_v0.X.debug.o
+__Hstack 0 0 STACK 2 stack dist/test/debug\Rocko_v0.X.debug.o
+__Htext0 0 0 ABS 0 text0 dist/test/debug\Rocko_v0.X.debug.o
+__Htext1 0 0 ABS 0 text1 dist/test/debug\Rocko_v0.X.debug.o
+__Htext2 0 0 ABS 0 text2 dist/test/debug\Rocko_v0.X.debug.o
+__Htext3 0 0 ABS 0 text3 dist/test/debug\Rocko_v0.X.debug.o
+__Htext4 0 0 ABS 0 text4 dist/test/debug\Rocko_v0.X.debug.o
+__Htext5 0 0 ABS 0 text5 dist/test/debug\Rocko_v0.X.debug.o
+__Htext6 0 0 ABS 0 text6 dist/test/debug\Rocko_v0.X.debug.o
+__Htext7 0 0 ABS 0 text7 dist/test/debug\Rocko_v0.X.debug.o
+__Htext8 0 0 ABS 0 text8 dist/test/debug\Rocko_v0.X.debug.o
+__Htext9 0 0 ABS 0 text9 dist/test/debug\Rocko_v0.X.debug.o
+___lwdiv@counter 29 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+__end_of_timers 2434 0 CODE 0 text1 dist/test/debug\Rocko_v0.X.debug.o
+__end_of_updatePulsesAndDirection 219E 0 CODE 0 text4 dist/test/debug\Rocko_v0.X.debug.o
+_currentTime 5 0 COMRAM 1 bssCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+__Hbigbss 0 0 BIGRAM 1 bigbss dist/test/debug\Rocko_v0.X.debug.o
+__Hbigram 0 0 ABS 0 bigram dist/test/debug\Rocko_v0.X.debug.o
+__Hbigsfr 0 0 ABS 0 bigsfr dist/test/debug\Rocko_v0.X.debug.o
+__smallconst 800 0 SMALLCONST 0 smallconst dist/test/debug\Rocko_v0.X.debug.o
+___xxtofl@arg 2D 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+___xxtofl@exp 2C 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+___xxtofl@val 23 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+__Hcomram 0 0 ABS 0 comram dist/test/debug\Rocko_v0.X.debug.o
+__Hconfig 30000C 0 CONFIG 4 config dist/test/debug\Rocko_v0.X.debug.o
+_TMR0_Reload 0 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+__end_of_rockoStateMachine 1110 0 CODE 0 text5 dist/test/debug\Rocko_v0.X.debug.o
+_limitLed 219E 0 CODE 0 text20 dist/test/debug\Rocko_v0.X.debug.o
+_T2HLTbits FBE 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+__Lbank0 0 0 ABS 0 bank0 dist/test/debug\Rocko_v0.X.debug.o
+__Lbank1 0 0 ABS 0 bank1 dist/test/debug\Rocko_v0.X.debug.o
+__Lbank2 0 0 ABS 0 bank2 dist/test/debug\Rocko_v0.X.debug.o
+__Lbank3 0 0 ABS 0 bank3 dist/test/debug\Rocko_v0.X.debug.o
+__Lbank4 0 0 ABS 0 bank4 dist/test/debug\Rocko_v0.X.debug.o
+__Lbank5 0 0 ABS 0 bank5 dist/test/debug\Rocko_v0.X.debug.o
+__Lbank6 0 0 ABS 0 bank6 dist/test/debug\Rocko_v0.X.debug.o
+__Lbank7 0 0 ABS 0 bank7 dist/test/debug\Rocko_v0.X.debug.o
+__Lcinit 0 0 ABS 0 cinit dist/test/debug\Rocko_v0.X.debug.o
+__Lconst 0 0 CONST 0 const dist/test/debug\Rocko_v0.X.debug.o
+__Lidata 0 0 CODE 0 idata dist/test/debug\Rocko_v0.X.debug.o
+__Lidloc 0 0 ABS 0 idloc dist/test/debug\Rocko_v0.X.debug.o
+updatePulsesAndDirection@hall2_state 24 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+__Lnvbit 0 0 COMRAM 1 nvbit dist/test/debug\Rocko_v0.X.debug.o
+INT1_SetInterruptHandler@InterruptHandler 23 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+__Lparam 0 0 COMRAM 1 rparam dist/test/debug\Rocko_v0.X.debug.o
+__Lrdata 0 0 COMRAM 1 rdata dist/test/debug\Rocko_v0.X.debug.o
+__Lstack 0 0 STACK 2 stack dist/test/debug\Rocko_v0.X.debug.o
+__Ltext0 0 0 ABS 0 text0 dist/test/debug\Rocko_v0.X.debug.o
+__Ltext1 0 0 ABS 0 text1 dist/test/debug\Rocko_v0.X.debug.o
+__Ltext2 0 0 ABS 0 text2 dist/test/debug\Rocko_v0.X.debug.o
+__Ltext3 0 0 ABS 0 text3 dist/test/debug\Rocko_v0.X.debug.o
+__Ltext4 0 0 ABS 0 text4 dist/test/debug\Rocko_v0.X.debug.o
+__Ltext5 0 0 ABS 0 text5 dist/test/debug\Rocko_v0.X.debug.o
+__Ltext6 0 0 ABS 0 text6 dist/test/debug\Rocko_v0.X.debug.o
+__Ltext7 0 0 ABS 0 text7 dist/test/debug\Rocko_v0.X.debug.o
+__Ltext8 0 0 ABS 0 text8 dist/test/debug\Rocko_v0.X.debug.o
+__Ltext9 0 0 ABS 0 text9 dist/test/debug\Rocko_v0.X.debug.o
+_INT0_SetInterruptHandler 28D0 0 CODE 0 text50 dist/test/debug\Rocko_v0.X.debug.o
+_openSafety1 BA 0 BANK0 1 dataBANK0 dist/test/debug\Rocko_v0.X.debug.o
+_openSafety2 B4 0 BANK0 1 dataBANK0 dist/test/debug\Rocko_v0.X.debug.o
+__end_of_TMR8_OverflowCallbackRegister 288A 0 CODE 0 text35 dist/test/debug\Rocko_v0.X.debug.o
+__Hfarbss 0 0 FARRAM 0 farbss dist/test/debug\Rocko_v0.X.debug.o
+__Lintcode_body 0 0 ABS 0 intcode_body dist/test/debug\Rocko_v0.X.debug.o
+_pulse_count_accumulated D 0 COMRAM 1 bssCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+_PORTAbits F89 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_PORTBbits F8A 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_PORTCbits F8B 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+__end_of_stopLed 2700 0 CODE 0 text17 dist/test/debug\Rocko_v0.X.debug.o
+_calculateRPM 1EEC 0 CODE 0 text29 dist/test/debug\Rocko_v0.X.debug.o
+_INTCONbits FF2 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_INTERRUPT_Initialize 24E8 0 CODE 0 text46 dist/test/debug\Rocko_v0.X.debug.o
+__Habs1 0 0 ABS 0 abs1 dist/test/debug\Rocko_v0.X.debug.o
+__Hdata 0 0 ABS 0 data dist/test/debug\Rocko_v0.X.debug.o
+__Hheap 0 0 HEAP 7 heap dist/test/debug\Rocko_v0.X.debug.o
+__Hinit 6A 0 CODE 0 init dist/test/debug\Rocko_v0.X.debug.o
+__Hrbit 0 0 COMRAM 1 rbit dist/test/debug\Rocko_v0.X.debug.o
+__Hrbss 0 0 COMRAM 1 rbss dist/test/debug\Rocko_v0.X.debug.o
+__Htemp 60 0 COMRAM 1 temp dist/test/debug\Rocko_v0.X.debug.o
+__Htext 0 0 ABS 0 text dist/test/debug\Rocko_v0.X.debug.o
+__Labs1 0 0 ABS 0 abs1 dist/test/debug\Rocko_v0.X.debug.o
+__Ldata 0 0 ABS 0 data dist/test/debug\Rocko_v0.X.debug.o
+__Lheap 0 0 HEAP 7 heap dist/test/debug\Rocko_v0.X.debug.o
+__Linit 66 0 CODE 0 init dist/test/debug\Rocko_v0.X.debug.o
+__Lrbit 0 0 COMRAM 1 rbit dist/test/debug\Rocko_v0.X.debug.o
+__Lrbss 0 0 COMRAM 1 rbss dist/test/debug\Rocko_v0.X.debug.o
+__Ltemp 5F 0 COMRAM 1 temp dist/test/debug\Rocko_v0.X.debug.o
+__Ltext 0 0 ABS 0 text dist/test/debug\Rocko_v0.X.debug.o
+_cmdReverse 80 0 BANK0 1 dataBANK0 dist/test/debug\Rocko_v0.X.debug.o
+__end_of_limitLed 221C 0 CODE 0 text20 dist/test/debug\Rocko_v0.X.debug.o
+__pnvBANK0 E6 0 BANK0 1 nvBANK0 dist/test/debug\Rocko_v0.X.debug.o
+_openSafety_check 2678 0 CODE 0 text15 dist/test/debug\Rocko_v0.X.debug.o
+___flge 1B44 0 CODE 0 text12 dist/test/debug\Rocko_v0.X.debug.o
+___lmul 2308 0 CODE 0 text31 dist/test/debug\Rocko_v0.X.debug.o
+_last_rpm_calculation_time 9 0 COMRAM 1 bssCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+__end_of_updateTimer 1A3E 0 CODE 0 text2 dist/test/debug\Rocko_v0.X.debug.o
+int$flags 5F 0 COMRAM 1 temp dist/test/debug\Rocko_v0.X.debug.o
+__HcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+__Hintret 0 0 ABS 0 intret dist/test/debug\Rocko_v0.X.debug.o
+__Hirdata 0 0 CODE 0 irdata dist/test/debug\Rocko_v0.X.debug.o
+_PR2 FBC 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_PR4 FB6 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_PR6 FB0 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_PR8 F29 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+__S0 28E6 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+__S1 F0 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+__S4 0 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+__S5 0 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_rpm 17 0 COMRAM 1 bssCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+_CLOCK_Initialize 286E 0 CODE 0 text51 dist/test/debug\Rocko_v0.X.debug.o
+resistive_safetyCheck@adcValue 28 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+_getAverageMotorCurrent 2434 0 CODE 0 text23 dist/test/debug\Rocko_v0.X.debug.o
+__end_of_INT2_SetInterruptHandler 28C6 0 CODE 0 text48 dist/test/debug\Rocko_v0.X.debug.o
+_TMR4_Initialize 27E0 0 CODE 0 text38 dist/test/debug\Rocko_v0.X.debug.o
+_T8CONbits F2A 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_cmdAuxOpen 88 0 BANK0 1 dataBANK0 dist/test/debug\Rocko_v0.X.debug.o
+__pnvCOMRAM 57 0 COMRAM 1 nvCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+TMR4_OverflowCallbackRegister@InterruptHandler 23 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+_stepSizeC 42 0 COMRAM 1 dataCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+__end_of_closeSafety_check 26D4 0 CODE 0 text26 dist/test/debug\Rocko_v0.X.debug.o
+_T2RSTbits FC0 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_TMR8_OverflowCallback EE 0 BANK0 1 nvBANK0 dist/test/debug\Rocko_v0.X.debug.o
+__end_of_cycle_nsleep 27C0 0 CODE 0 text25 dist/test/debug\Rocko_v0.X.debug.o
+__HidataCOMRAM 0 0 ABS 0 idataCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+_hornToggleTimer CC 0 BANK0 1 dataBANK0 dist/test/debug\Rocko_v0.X.debug.o
+__Lbigdata 0 0 BIGRAM 1 bigdata dist/test/debug\Rocko_v0.X.debug.o
+__Hnvrram 0 0 COMRAM 1 nvrram dist/test/debug\Rocko_v0.X.debug.o
+_SYSTEM_Initialize 272C 0 CODE 0 text33 dist/test/debug\Rocko_v0.X.debug.o
+TMR8_OverflowCallbackRegister@InterruptHandler 23 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+___xxtofl 13CA 0 CODE 0 text10 dist/test/debug\Rocko_v0.X.debug.o
+_ledControl 284A 0 CODE 0 text16 dist/test/debug\Rocko_v0.X.debug.o
+updateTimer@reset 24 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+_INT3_InterruptHandler 57 0 COMRAM 1 nvCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+__HnvBANK0 0 0 ABS 0 nvBANK0 dist/test/debug\Rocko_v0.X.debug.o
+_dutyAccumulator 1 0 COMRAM 1 bssCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+__Lintentry 0 0 ABS 0 intentry dist/test/debug\Rocko_v0.X.debug.o
+___lldiv@divisor 33 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+_TMR2_DefaultOverflowCallback 0 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+__Hramtop 800 0 RAM 0 ramtop dist/test/debug\Rocko_v0.X.debug.o
+_T6CLKCON FB3 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+__Hrparam 0 0 COMRAM 1 rparam dist/test/debug\Rocko_v0.X.debug.o
+__end_of___xxtofl 157E 0 CODE 0 text10 dist/test/debug\Rocko_v0.X.debug.o
+_inputs 1D3E 0 CODE 0 text21 dist/test/debug\Rocko_v0.X.debug.o
+TMR0_OverflowCallbackRegister@CallbackHandler 23 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+_CCPTMRS1bits FAE 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_rampstep 15 0 COMRAM 1 bssCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+__pdataBANK0 60 0 BANK0 1 dataBANK0 dist/test/debug\Rocko_v0.X.debug.o
+__activetblptr 2 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_TMR6_Start 0 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_TMR6_Tasks 0 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+?_getAverageMotorCurrent 2B 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+__Hstruct 0 0 COMRAM 1 struct dist/test/debug\Rocko_v0.X.debug.o
+__LbssBANK0 0 0 ABS 0 bssBANK0 dist/test/debug\Rocko_v0.X.debug.o
+__Htext10 0 0 ABS 0 text10 dist/test/debug\Rocko_v0.X.debug.o
+__Htext11 0 0 ABS 0 text11 dist/test/debug\Rocko_v0.X.debug.o
+__Htext12 0 0 ABS 0 text12 dist/test/debug\Rocko_v0.X.debug.o
+__Htext13 0 0 ABS 0 text13 dist/test/debug\Rocko_v0.X.debug.o
+__Htext14 0 0 ABS 0 text14 dist/test/debug\Rocko_v0.X.debug.o
+__Htext15 0 0 ABS 0 text15 dist/test/debug\Rocko_v0.X.debug.o
+__Htext16 0 0 ABS 0 text16 dist/test/debug\Rocko_v0.X.debug.o
+__Htext17 0 0 ABS 0 text17 dist/test/debug\Rocko_v0.X.debug.o
+__Htext18 0 0 ABS 0 text18 dist/test/debug\Rocko_v0.X.debug.o
+__Htext19 0 0 ABS 0 text19 dist/test/debug\Rocko_v0.X.debug.o
+__Htext20 0 0 ABS 0 text20 dist/test/debug\Rocko_v0.X.debug.o
+__Htext21 0 0 ABS 0 text21 dist/test/debug\Rocko_v0.X.debug.o
+__Htext22 0 0 ABS 0 text22 dist/test/debug\Rocko_v0.X.debug.o
+__Htext23 0 0 ABS 0 text23 dist/test/debug\Rocko_v0.X.debug.o
+__Htext24 0 0 ABS 0 text24 dist/test/debug\Rocko_v0.X.debug.o
+__Htext25 0 0 ABS 0 text25 dist/test/debug\Rocko_v0.X.debug.o
+__Htext26 0 0 ABS 0 text26 dist/test/debug\Rocko_v0.X.debug.o
+__Htext27 0 0 ABS 0 text27 dist/test/debug\Rocko_v0.X.debug.o
+__Htext28 0 0 ABS 0 text28 dist/test/debug\Rocko_v0.X.debug.o
+__Htext29 0 0 ABS 0 text29 dist/test/debug\Rocko_v0.X.debug.o
+__Htext30 0 0 ABS 0 text30 dist/test/debug\Rocko_v0.X.debug.o
+__Htext31 0 0 ABS 0 text31 dist/test/debug\Rocko_v0.X.debug.o
+__Htext32 0 0 ABS 0 text32 dist/test/debug\Rocko_v0.X.debug.o
+__Htext33 0 0 ABS 0 text33 dist/test/debug\Rocko_v0.X.debug.o
+__Htext34 0 0 ABS 0 text34 dist/test/debug\Rocko_v0.X.debug.o
+__Htext35 0 0 ABS 0 text35 dist/test/debug\Rocko_v0.X.debug.o
+__Htext36 0 0 ABS 0 text36 dist/test/debug\Rocko_v0.X.debug.o
+__Htext37 0 0 ABS 0 text37 dist/test/debug\Rocko_v0.X.debug.o
+__Htext38 0 0 ABS 0 text38 dist/test/debug\Rocko_v0.X.debug.o
+__Htext39 0 0 ABS 0 text39 dist/test/debug\Rocko_v0.X.debug.o
+__Htext40 0 0 ABS 0 text40 dist/test/debug\Rocko_v0.X.debug.o
+__Htext41 0 0 ABS 0 text41 dist/test/debug\Rocko_v0.X.debug.o
+__Htext42 0 0 ABS 0 text42 dist/test/debug\Rocko_v0.X.debug.o
+__Htext43 0 0 ABS 0 text43 dist/test/debug\Rocko_v0.X.debug.o
+__Htext44 0 0 ABS 0 text44 dist/test/debug\Rocko_v0.X.debug.o
+__Htext45 0 0 ABS 0 text45 dist/test/debug\Rocko_v0.X.debug.o
+__Htext46 0 0 ABS 0 text46 dist/test/debug\Rocko_v0.X.debug.o
+__Htext47 0 0 ABS 0 text47 dist/test/debug\Rocko_v0.X.debug.o
+__Htext48 0 0 ABS 0 text48 dist/test/debug\Rocko_v0.X.debug.o
+__Htext49 0 0 ABS 0 text49 dist/test/debug\Rocko_v0.X.debug.o
+__Htext50 0 0 ABS 0 text50 dist/test/debug\Rocko_v0.X.debug.o
+__Htext51 0 0 ABS 0 text51 dist/test/debug\Rocko_v0.X.debug.o
+__Htext52 0 0 ABS 0 text52 dist/test/debug\Rocko_v0.X.debug.o
+__Htext54 0 0 ABS 0 text54 dist/test/debug\Rocko_v0.X.debug.o
+__Htext55 0 0 ABS 0 text55 dist/test/debug\Rocko_v0.X.debug.o
+_INTERRUPT_InterruptManager 8 0 CODE 0 intcode dist/test/debug\Rocko_v0.X.debug.o
+_TMR8_DefaultOverflowCallback 0 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_ADC_Initialize 2490 0 CODE 0 text52 dist/test/debug\Rocko_v0.X.debug.o
+_PIE0bits E29 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_PIE1bits E2A 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+___fladd@signs 2F 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+__ptext10 13CA 0 CODE 0 text10 dist/test/debug\Rocko_v0.X.debug.o
+__ptext11 1A3E 0 CODE 0 text11 dist/test/debug\Rocko_v0.X.debug.o
+__ptext12 1B44 0 CODE 0 text12 dist/test/debug\Rocko_v0.X.debug.o
+__ptext13 83E 0 CODE 0 text13 dist/test/debug\Rocko_v0.X.debug.o
+__ptext14 2644 0 CODE 0 text14 dist/test/debug\Rocko_v0.X.debug.o
+__ptext15 2678 0 CODE 0 text15 dist/test/debug\Rocko_v0.X.debug.o
+__ptext16 284A 0 CODE 0 text16 dist/test/debug\Rocko_v0.X.debug.o
+__ptext17 26D4 0 CODE 0 text17 dist/test/debug\Rocko_v0.X.debug.o
+__ptext18 1C48 0 CODE 0 text18 dist/test/debug\Rocko_v0.X.debug.o
+__ptext19 2608 0 CODE 0 text19 dist/test/debug\Rocko_v0.X.debug.o
+__ptext20 219E 0 CODE 0 text20 dist/test/debug\Rocko_v0.X.debug.o
+__ptext21 1D3E 0 CODE 0 text21 dist/test/debug\Rocko_v0.X.debug.o
+__ptext22 1110 0 CODE 0 text22 dist/test/debug\Rocko_v0.X.debug.o
+__ptext23 2434 0 CODE 0 text23 dist/test/debug\Rocko_v0.X.debug.o
+__ptext24 1E2A 0 CODE 0 text24 dist/test/debug\Rocko_v0.X.debug.o
+__ptext25 27A0 0 CODE 0 text25 dist/test/debug\Rocko_v0.X.debug.o
+__ptext26 26A6 0 CODE 0 text26 dist/test/debug\Rocko_v0.X.debug.o
+__ptext27 25C4 0 CODE 0 text27 dist/test/debug\Rocko_v0.X.debug.o
+__ptext28 2700 0 CODE 0 text28 dist/test/debug\Rocko_v0.X.debug.o
+__ptext29 1EEC 0 CODE 0 text29 dist/test/debug\Rocko_v0.X.debug.o
+__ptext30 2294 0 CODE 0 text30 dist/test/debug\Rocko_v0.X.debug.o
+__ptext31 2308 0 CODE 0 text31 dist/test/debug\Rocko_v0.X.debug.o
+__ptext32 206C 0 CODE 0 text32 dist/test/debug\Rocko_v0.X.debug.o
+__ptext33 272C 0 CODE 0 text33 dist/test/debug\Rocko_v0.X.debug.o
+__ptext34 277C 0 CODE 0 text34 dist/test/debug\Rocko_v0.X.debug.o
+__ptext35 2880 0 CODE 0 text35 dist/test/debug\Rocko_v0.X.debug.o
+__ptext36 27C0 0 CODE 0 text36 dist/test/debug\Rocko_v0.X.debug.o
+__ptext37 288A 0 CODE 0 text37 dist/test/debug\Rocko_v0.X.debug.o
+__ptext38 27E0 0 CODE 0 text38 dist/test/debug\Rocko_v0.X.debug.o
+__ptext39 2894 0 CODE 0 text39 dist/test/debug\Rocko_v0.X.debug.o
+__ptext40 2756 0 CODE 0 text40 dist/test/debug\Rocko_v0.X.debug.o
+__ptext41 289E 0 CODE 0 text41 dist/test/debug\Rocko_v0.X.debug.o
+__ptext42 2800 0 CODE 0 text42 dist/test/debug\Rocko_v0.X.debug.o
+__ptext43 28A8 0 CODE 0 text43 dist/test/debug\Rocko_v0.X.debug.o
+__ptext44 285C 0 CODE 0 text44 dist/test/debug\Rocko_v0.X.debug.o
+__ptext45 1FAE 0 CODE 0 text45 dist/test/debug\Rocko_v0.X.debug.o
+__ptext46 24E8 0 CODE 0 text46 dist/test/debug\Rocko_v0.X.debug.o
+__ptext47 28B2 0 CODE 0 text47 dist/test/debug\Rocko_v0.X.debug.o
+__ptext48 28BC 0 CODE 0 text48 dist/test/debug\Rocko_v0.X.debug.o
+__ptext49 28C6 0 CODE 0 text49 dist/test/debug\Rocko_v0.X.debug.o
+__ptext50 28D0 0 CODE 0 text50 dist/test/debug\Rocko_v0.X.debug.o
+__ptext51 286E 0 CODE 0 text51 dist/test/debug\Rocko_v0.X.debug.o
+__ptext52 2490 0 CODE 0 text52 dist/test/debug\Rocko_v0.X.debug.o
+__ptext54 28DA 0 CODE 0 text54 dist/test/debug\Rocko_v0.X.debug.o
+__ptext55 28E0 0 CODE 0 text55 dist/test/debug\Rocko_v0.X.debug.o
+__end_of_motorOpen 1932 0 CODE 0 text8 dist/test/debug\Rocko_v0.X.debug.o
+__end_of_motorStop 181C 0 CODE 0 text6 dist/test/debug\Rocko_v0.X.debug.o
+__end_of_PIN_MANAGER_Initialize 206C 0 CODE 0 text45 dist/test/debug\Rocko_v0.X.debug.o
+___awdiv 1E2A 0 CODE 0 text24 dist/test/debug\Rocko_v0.X.debug.o
+__end_of_TMR0_Initialize 2820 0 CODE 0 text42 dist/test/debug\Rocko_v0.X.debug.o
+___fladd 83E 0 CODE 0 text13 dist/test/debug\Rocko_v0.X.debug.o
+___flsub 257E 0 CODE 0 text7 dist/test/debug\Rocko_v0.X.debug.o
+___fltol 1A3E 0 CODE 0 text11 dist/test/debug\Rocko_v0.X.debug.o
+___lldiv 206C 0 CODE 0 text32 dist/test/debug\Rocko_v0.X.debug.o
+___lwdiv 2294 0 CODE 0 text30 dist/test/debug\Rocko_v0.X.debug.o
+_TMR0_OverflowCallbackRegister 28A8 0 CODE 0 text43 dist/test/debug\Rocko_v0.X.debug.o
+__Lbigbss 0 0 BIGRAM 1 bigbss dist/test/debug\Rocko_v0.X.debug.o
+__Lbigram 0 0 ABS 0 bigram dist/test/debug\Rocko_v0.X.debug.o
+__Lbigsfr 0 0 ABS 0 bigsfr dist/test/debug\Rocko_v0.X.debug.o
+_INT2_InterruptHandler 59 0 COMRAM 1 nvCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+__end_of_calculateRPM 1FAE 0 CODE 0 text29 dist/test/debug\Rocko_v0.X.debug.o
+_rockoStateMachine CF4 0 CODE 0 text5 dist/test/debug\Rocko_v0.X.debug.o
+___lmul@multiplier 23 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+__Lcomram 0 0 ABS 0 comram dist/test/debug\Rocko_v0.X.debug.o
+__Lconfig 0 0 CONFIG 4 config dist/test/debug\Rocko_v0.X.debug.o
+_LATAbits F79 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_LATBbits F7A 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_LATDbits F7C 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_LATEbits F7D 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_LATFbits F7E 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+__Lsivt_hi 0 0 CODE 0 sivt_hi dist/test/debug\Rocko_v0.X.debug.o
+__Lsivt_lo 18 0 CODE 0 sivt_lo dist/test/debug\Rocko_v0.X.debug.o
+__end_of_openSafety_check 26A6 0 CODE 0 text15 dist/test/debug\Rocko_v0.X.debug.o
+_topSpeed 40 0 COMRAM 1 dataCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+_T6CONbits FB1 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+__Lfarbss 0 0 FARRAM 0 farbss dist/test/debug\Rocko_v0.X.debug.o
+___inthi_stack_hi 0 0 STACK 2 stack C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_9.o
+___inthi_stack_lo 0 0 STACK 2 stack C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_9.o
+___lwdiv@divisor 25 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+_TMR6_OverflowCallback EC 0 BANK0 1 nvBANK0 dist/test/debug\Rocko_v0.X.debug.o
+__Lfardata 0 0 FARRAM 0 fardata dist/test/debug\Rocko_v0.X.debug.o
+isa$std 1 0 ABS 0 - C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_9.o
+__end_of_CLOCK_Initialize 2880 0 CODE 0 text51 dist/test/debug\Rocko_v0.X.debug.o
+_timers 23D8 0 CODE 0 text1 dist/test/debug\Rocko_v0.X.debug.o
+_motorOpen 181C 0 CODE 0 text8 dist/test/debug\Rocko_v0.X.debug.o
+_motorStop 1706 0 CODE 0 text6 dist/test/debug\Rocko_v0.X.debug.o
+stackhi 0 0 ABS 0 - C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_9.o
+stacklo 0 0 ABS 0 - C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_9.o
+__end_of_ADC_ChannelSelectAndConvert 272C 0 CODE 0 text28 dist/test/debug\Rocko_v0.X.debug.o
+__end_of_ledControl 285C 0 CODE 0 text16 dist/test/debug\Rocko_v0.X.debug.o
+__Lintcode 8 0 CODE 0 intcode dist/test/debug\Rocko_v0.X.debug.o
+_adc_busy_status 22 0 COMRAM 1 bssCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+_OSCCON1 E43 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_OSCCON3 E45 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_OSCTUNE E48 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+__Lintret 0 0 ABS 0 intret dist/test/debug\Rocko_v0.X.debug.o
+__Lirdata 0 0 CODE 0 irdata dist/test/debug\Rocko_v0.X.debug.o
+_ADCON0bits F60 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_ADCON1bits F59 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_ADCON2bits F5A 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_ADCON3bits F5B 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+___fladd@grs 32 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+_closeSafety_check 26A6 0 CODE 0 text26 dist/test/debug\Rocko_v0.X.debug.o
+_INT1_InterruptHandler 5B 0 COMRAM 1 nvCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+_INT1_DefaultInterruptHandler 0 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+__Lspace_0 0 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+__Lspace_1 0 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+__Lspace_2 0 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+__Lspace_4 0 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+INT3_SetInterruptHandler@InterruptHandler 23 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+__pbssCOMRAM 1 0 COMRAM 1 bssCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+__end_of_ADC_Initialize 24E8 0 CODE 0 text52 dist/test/debug\Rocko_v0.X.debug.o
+___flge@ff1 23 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+___flge@ff2 27 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+__end_of_TMR4_OverflowCallbackRegister 289E 0 CODE 0 text39 dist/test/debug\Rocko_v0.X.debug.o
+updatePulsesAndDirection@prev_hall1 20 0 COMRAM 1 bssCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+updatePulsesAndDirection@prev_hall2 1F 0 COMRAM 1 bssCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+_PIR0bits E33 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_PIR1bits E34 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_PIR5bits E38 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+__LcstackCOMRAM 0 0 ABS 0 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+___fltol@exp1 2C 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+_TMR6_OverflowCallbackRegister 288A 0 CODE 0 text37 dist/test/debug\Rocko_v0.X.debug.o
+end_of_initialization 23CA 0 CODE 0 cinit dist/test/debug\Rocko_v0.X.debug.o
+_TMR0_Initialize 2800 0 CODE 0 text42 dist/test/debug\Rocko_v0.X.debug.o
+__Lnvrram 0 0 COMRAM 1 nvrram dist/test/debug\Rocko_v0.X.debug.o
+__Hintentry 0 0 ABS 0 intentry dist/test/debug\Rocko_v0.X.debug.o
+___awdiv@quotient 29 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+?___awdiv 23 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+___lwdiv@dividend 23 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+?___fladd 23 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+?___flsub 33 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+?___fltol 23 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+?___lldiv 2F 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+?___lwdiv 23 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+__Hreset_vec 6 0 CODE 0 reset_vec dist/test/debug\Rocko_v0.X.debug.o
+__HbssBANK0 0 0 ABS 0 bssBANK0 dist/test/debug\Rocko_v0.X.debug.o
+commandFilter@getInput 28 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+_INT0_InterruptHandler 5D 0 COMRAM 1 nvCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+__end_of_TMR6_Initialize 27E0 0 CODE 0 text36 dist/test/debug\Rocko_v0.X.debug.o
+_INT1_SetInterruptHandler 28C6 0 CODE 0 text49 dist/test/debug\Rocko_v0.X.debug.o
+__Lramtop 800 0 RAM 0 ramtop dist/test/debug\Rocko_v0.X.debug.o
+commandFilter@commandName 23 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+__Lrparam 0 0 COMRAM 1 rparam dist/test/debug\Rocko_v0.X.debug.o
+_TMR0_Start 0 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_TMR0_Tasks 0 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+__pcinit 2372 0 CODE 0 cinit dist/test/debug\Rocko_v0.X.debug.o
+__ptext0 2534 0 CODE 0 text0 dist/test/debug\Rocko_v0.X.debug.o
+__ptext1 23D8 0 CODE 0 text1 dist/test/debug\Rocko_v0.X.debug.o
+__ptext2 1932 0 CODE 0 text2 dist/test/debug\Rocko_v0.X.debug.o
+__ptext3 2838 0 CODE 0 text3 dist/test/debug\Rocko_v0.X.debug.o
+__ptext4 2110 0 CODE 0 text4 dist/test/debug\Rocko_v0.X.debug.o
+__ptext5 CF4 0 CODE 0 text5 dist/test/debug\Rocko_v0.X.debug.o
+__ptext6 1706 0 CODE 0 text6 dist/test/debug\Rocko_v0.X.debug.o
+__ptext7 257E 0 CODE 0 text7 dist/test/debug\Rocko_v0.X.debug.o
+__ptext8 181C 0 CODE 0 text8 dist/test/debug\Rocko_v0.X.debug.o
+__ptext9 157E 0 CODE 0 text9 dist/test/debug\Rocko_v0.X.debug.o
+__Lstruct 0 0 COMRAM 1 struct dist/test/debug\Rocko_v0.X.debug.o
+__Ltext10 0 0 ABS 0 text10 dist/test/debug\Rocko_v0.X.debug.o
+__Ltext11 0 0 ABS 0 text11 dist/test/debug\Rocko_v0.X.debug.o
+__Ltext12 0 0 ABS 0 text12 dist/test/debug\Rocko_v0.X.debug.o
+__Ltext13 0 0 ABS 0 text13 dist/test/debug\Rocko_v0.X.debug.o
+__Ltext14 0 0 ABS 0 text14 dist/test/debug\Rocko_v0.X.debug.o
+__Ltext15 0 0 ABS 0 text15 dist/test/debug\Rocko_v0.X.debug.o
+__Ltext16 0 0 ABS 0 text16 dist/test/debug\Rocko_v0.X.debug.o
+__Ltext17 0 0 ABS 0 text17 dist/test/debug\Rocko_v0.X.debug.o
+__Ltext18 0 0 ABS 0 text18 dist/test/debug\Rocko_v0.X.debug.o
+__Ltext19 0 0 ABS 0 text19 dist/test/debug\Rocko_v0.X.debug.o
+__Ltext20 0 0 ABS 0 text20 dist/test/debug\Rocko_v0.X.debug.o
+__Ltext21 0 0 ABS 0 text21 dist/test/debug\Rocko_v0.X.debug.o
+__Ltext22 0 0 ABS 0 text22 dist/test/debug\Rocko_v0.X.debug.o
+__Ltext23 0 0 ABS 0 text23 dist/test/debug\Rocko_v0.X.debug.o
+__Ltext24 0 0 ABS 0 text24 dist/test/debug\Rocko_v0.X.debug.o
+__Ltext25 0 0 ABS 0 text25 dist/test/debug\Rocko_v0.X.debug.o
+__Ltext26 0 0 ABS 0 text26 dist/test/debug\Rocko_v0.X.debug.o
+__Ltext27 0 0 ABS 0 text27 dist/test/debug\Rocko_v0.X.debug.o
+__Ltext28 0 0 ABS 0 text28 dist/test/debug\Rocko_v0.X.debug.o
+__Ltext29 0 0 ABS 0 text29 dist/test/debug\Rocko_v0.X.debug.o
+__Ltext30 0 0 ABS 0 text30 dist/test/debug\Rocko_v0.X.debug.o
+__Ltext31 0 0 ABS 0 text31 dist/test/debug\Rocko_v0.X.debug.o
+__Ltext32 0 0 ABS 0 text32 dist/test/debug\Rocko_v0.X.debug.o
+__Ltext33 0 0 ABS 0 text33 dist/test/debug\Rocko_v0.X.debug.o
+__Ltext34 0 0 ABS 0 text34 dist/test/debug\Rocko_v0.X.debug.o
+__Ltext35 0 0 ABS 0 text35 dist/test/debug\Rocko_v0.X.debug.o
+__Ltext36 0 0 ABS 0 text36 dist/test/debug\Rocko_v0.X.debug.o
+__Ltext37 0 0 ABS 0 text37 dist/test/debug\Rocko_v0.X.debug.o
+__Ltext38 0 0 ABS 0 text38 dist/test/debug\Rocko_v0.X.debug.o
+__Ltext39 0 0 ABS 0 text39 dist/test/debug\Rocko_v0.X.debug.o
+__Ltext40 0 0 ABS 0 text40 dist/test/debug\Rocko_v0.X.debug.o
+__Ltext41 0 0 ABS 0 text41 dist/test/debug\Rocko_v0.X.debug.o
+__Ltext42 0 0 ABS 0 text42 dist/test/debug\Rocko_v0.X.debug.o
+__Ltext43 0 0 ABS 0 text43 dist/test/debug\Rocko_v0.X.debug.o
+__Ltext44 0 0 ABS 0 text44 dist/test/debug\Rocko_v0.X.debug.o
+__Ltext45 0 0 ABS 0 text45 dist/test/debug\Rocko_v0.X.debug.o
+__Ltext46 0 0 ABS 0 text46 dist/test/debug\Rocko_v0.X.debug.o
+__Ltext47 0 0 ABS 0 text47 dist/test/debug\Rocko_v0.X.debug.o
+__Ltext48 0 0 ABS 0 text48 dist/test/debug\Rocko_v0.X.debug.o
+__Ltext49 0 0 ABS 0 text49 dist/test/debug\Rocko_v0.X.debug.o
+__Ltext50 0 0 ABS 0 text50 dist/test/debug\Rocko_v0.X.debug.o
+__Ltext51 0 0 ABS 0 text51 dist/test/debug\Rocko_v0.X.debug.o
+__Ltext52 0 0 ABS 0 text52 dist/test/debug\Rocko_v0.X.debug.o
+__Ltext54 0 0 ABS 0 text54 dist/test/debug\Rocko_v0.X.debug.o
+__Ltext55 0 0 ABS 0 text55 dist/test/debug\Rocko_v0.X.debug.o
+__ramtop 800 0 RAM 0 ramtop C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_9.o
+__end_of_getAverageMotorCurrent 2490 0 CODE 0 text23 dist/test/debug\Rocko_v0.X.debug.o
+__Lpowerup 0 0 CODE 0 powerup dist/test/debug\Rocko_v0.X.debug.o
+?___xxtofl 23 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+_TMR4_OverflowCallback EA 0 BANK0 1 nvBANK0 dist/test/debug\Rocko_v0.X.debug.o
+__Leeprom_data 0 0 EEDATA 0 eeprom_data dist/test/debug\Rocko_v0.X.debug.o
+_current_time 11 0 COMRAM 1 bssCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+__H__absolute__ 0 0 ABS 0 __absolute__ dist/test/debug\Rocko_v0.X.debug.o
+___fladd@aexp 30 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+___fladd@bexp 31 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+_T4CONbits FB7 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+___fltol@sign1 2B 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+__psmallconst 800 0 SMALLCONST 0 smallconst dist/test/debug\Rocko_v0.X.debug.o
+__end_of_INT3_SetInterruptHandler 28BC 0 CODE 0 text47 dist/test/debug\Rocko_v0.X.debug.o
+__Lreset_vec 0 0 CODE 0 reset_vec dist/test/debug\Rocko_v0.X.debug.o
+INT0_SetInterruptHandler@InterruptHandler 23 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+_stopLed 26D4 0 CODE 0 text17 dist/test/debug\Rocko_v0.X.debug.o
+_SLRCONA E8F 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_SLRCONB E97 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_SLRCONC E9F 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_SLRCOND EA4 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_SLRCONE EAC 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_SLRCONF EB1 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_SLRCONG EB9 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_SLRCONH EBE 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+___heap_hi 0 0 ABS 0 - C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_9.o
+___heap_lo 0 0 ABS 0 - C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_9.o
+___fltol@f1 23 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+_ADC_ThresholdISR 28DA 0 CODE 0 text54 dist/test/debug\Rocko_v0.X.debug.o
+___param_bank 0 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+___intlo_stack_hi 0 0 STACK 2 stack C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_9.o
+___intlo_stack_lo 0 0 STACK 2 stack C:\Users\jared\AppData\Local\Temp\xcAsop0.\driver_tmp_9.o
+__Hbigdata 0 0 BIGRAM 1 bigdata dist/test/debug\Rocko_v0.X.debug.o
+__end_of__initialization 23CA 0 CODE 0 cinit dist/test/debug\Rocko_v0.X.debug.o
+_reverseTimer D2 0 BANK0 1 dataBANK0 dist/test/debug\Rocko_v0.X.debug.o
+__Libigdata 0 0 CODE 0 ibigdata dist/test/debug\Rocko_v0.X.debug.o
+_commandFilter 1110 0 CODE 0 text22 dist/test/debug\Rocko_v0.X.debug.o
+_ADSTATbits F65 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+__pidataBANK0 221C 0 CODE 0 idataBANK0 dist/test/debug\Rocko_v0.X.debug.o
+getAverageMotorCurrent@i 2F 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+__Lclrtext 0 0 ABS 0 clrtext dist/test/debug\Rocko_v0.X.debug.o
+__end_of_INT0_SetInterruptHandler 28DA 0 CODE 0 text50 dist/test/debug\Rocko_v0.X.debug.o
+___lmul@product 2B 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+__end_of_resistive_safetyCheck 2608 0 CODE 0 text27 dist/test/debug\Rocko_v0.X.debug.o
+_motorDelayTimerC C0 0 BANK0 1 dataBANK0 dist/test/debug\Rocko_v0.X.debug.o
+___lmul@multiplicand 27 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+_TMR6_Initialize 27C0 0 CODE 0 text36 dist/test/debug\Rocko_v0.X.debug.o
+___lldiv@quotient 37 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+__pcstackCOMRAM 23 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+_T0CON0bits FD5 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_TMR4_DefaultOverflowCallback 0 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+__end_of_main 257E 0 CODE 0 text0 dist/test/debug\Rocko_v0.X.debug.o
+__pintcode 8 0 CODE 0 intcode dist/test/debug\Rocko_v0.X.debug.o
+_T4INPPS DFE 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_ADACQ F5C 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_ADACT F56 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_ADCAP F5D 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_ADCLK F57 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_ADCNT F67 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_ADPCH F5F 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_ADPRE F5E 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_ADREF F58 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_ADRPT F66 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_IOCBF E93 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_IOCBN E94 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_IOCBP E95 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_IOCCF E9B 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_IOCCN E9C 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_IOCCP E9D 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_IOCEF EA8 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_IOCEN EA9 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_IOCEP EAA 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_IOCGF EB5 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_IOCGN EB6 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_IOCGP EB7 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_OSCEN E47 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_T2CON FBD 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_T2HLT FBE 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_T2RST FC0 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_T2TMR FBB 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_T4CON FB7 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_T4HLT FB8 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_T4RST FBA 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_T4TMR FB5 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_T6CON FB1 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_T6HLT FB2 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_T6RST FB4 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_T6TMR FAF 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_T8CON F2A 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_T8HLT F2B 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_T8RST F2D 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_T8TMR F28 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_TMR0H FD4 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_TMR0L FD3 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_TRISA F81 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_TRISB F82 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_TRISC F83 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_TRISD F84 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_TRISE F85 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_TRISF F86 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_TRISG F87 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_TRISH F88 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+__HRAM 0 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+__Hbss 0 0 RAM 1 bss dist/test/debug\Rocko_v0.X.debug.o
+__Hram 0 0 ABS 0 ram dist/test/debug\Rocko_v0.X.debug.o
+__Hsfr 0 0 ABS 0 sfr dist/test/debug\Rocko_v0.X.debug.o
+__LRAM 1 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+__Lbss 0 0 RAM 1 bss dist/test/debug\Rocko_v0.X.debug.o
+__Lram 0 0 ABS 0 ram dist/test/debug\Rocko_v0.X.debug.o
+__Lsfr 0 0 ABS 0 sfr dist/test/debug\Rocko_v0.X.debug.o
+_resistive_safetyCheck 25C4 0 CODE 0 text27 dist/test/debug\Rocko_v0.X.debug.o
+?_ADC_ChannelSelectAndConvert 23 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+_T6INPPS DFF 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_timer E0 0 BANK0 1 bssBANK0 dist/test/debug\Rocko_v0.X.debug.o
+_TMR2_OverflowCallback E8 0 BANK0 1 nvBANK0 dist/test/debug\Rocko_v0.X.debug.o
+__HdataBANK0 0 0 ABS 0 dataBANK0 dist/test/debug\Rocko_v0.X.debug.o
+_T8INPPS E00 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_cmdOpen A0 0 BANK0 1 dataBANK0 dist/test/debug\Rocko_v0.X.debug.o
+_TMR2_PeriodCountSet 0 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+__Hsivt_hi 0 0 CODE 0 sivt_hi dist/test/debug\Rocko_v0.X.debug.o
+__Hsivt_lo 18 0 CODE 0 sivt_lo dist/test/debug\Rocko_v0.X.debug.o
+__initialization 2372 0 CODE 0 cinit dist/test/debug\Rocko_v0.X.debug.o
+___xxtofl@sign 2B 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+__pbssBANK0 D8 0 BANK0 1 bssBANK0 dist/test/debug\Rocko_v0.X.debug.o
+__pdataCOMRAM 40 0 COMRAM 1 dataCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+_T4CLKCON FB9 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_T2CONbits FBD 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_command D8 0 BANK0 1 bssBANK0 dist/test/debug\Rocko_v0.X.debug.o
+__Hfardata 0 0 FARRAM 0 fardata dist/test/debug\Rocko_v0.X.debug.o
+__Hsmallconst 83E 0 SMALLCONST 0 smallconst dist/test/debug\Rocko_v0.X.debug.o
+_openLimit 68 0 BANK0 1 dataBANK0 dist/test/debug\Rocko_v0.X.debug.o
+_TMR4_Start 0 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+_TMR4_Tasks 0 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+__end_of_TMR0_OverflowCallbackRegister 28B2 0 CODE 0 text43 dist/test/debug\Rocko_v0.X.debug.o
+__end_of_PWM6_Initialize 286E 0 CODE 0 text44 dist/test/debug\Rocko_v0.X.debug.o
+__end_of_ADC_ISR 28E6 0 CODE 0 text55 dist/test/debug\Rocko_v0.X.debug.o
+_T8HLTbits F2B 0 ABS 0 - dist/test/debug\Rocko_v0.X.debug.o
+__end_of_PWM6_LoadDutyValue 2678 0 CODE 0 text14 dist/test/debug\Rocko_v0.X.debug.o
+__Lifardata 0 0 CODE 0 ifardata dist/test/debug\Rocko_v0.X.debug.o
+_TMR2_OverflowCallbackRegister 289E 0 CODE 0 text41 dist/test/debug\Rocko_v0.X.debug.o
+TMR2_OverflowCallbackRegister@InterruptHandler 23 0 COMRAM 1 cstackCOMRAM dist/test/debug\Rocko_v0.X.debug.o
+__Hintsave_regs 0 0 BIGRAM 1 intsave_regs dist/test/debug\Rocko_v0.X.debug.o
+__Hintcode 66 0 CODE 0 intcode dist/test/debug\Rocko_v0.X.debug.o
+__end_of_TMR2_Initialize 277C 0 CODE 0 text40 dist/test/debug\Rocko_v0.X.debug.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+text3 0 2838 2838 AE 1
+text13 0 83E 83E 1FF9 1
+reset_vec 0 0 0 6 1
+intcode 0 8 8 62 1
+smallconst 0 800 800 3E 1
+dataBANK0 1 60 60 90 1
+bssCOMRAM 1 1 1 5F 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES
